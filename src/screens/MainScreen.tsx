@@ -5,13 +5,23 @@ import dayjs from "dayjs";
 import { translate } from "../i18n";
 import tw from "../lib/tailwind";
 import { romeNumberArray } from "../utils/romeNumbers";
+import {
+  uppercaseFirstLetter,
+  uppercaseFirstLetterOfLastWord,
+} from "../utils/strings";
+
+const getCurrentDayTitle = () => {
+  let title = dayjs().format("dddd, DD MMMM");
+  title = uppercaseFirstLetter(title);
+  title = uppercaseFirstLetterOfLastWord(title);
+  return title;
+};
 
 export const TodayDate = () => {
   return (
     <>
-      {/* Uppercase first later */}
       <Text style={tw`text-2xl text-black text-center`}>
-        {dayjs().format("dddd, DD MMMM")}
+        {getCurrentDayTitle()}
       </Text>
       <View style={tw`p-1`} />
       <Text style={tw`text-3xl text-black text-center`}>
