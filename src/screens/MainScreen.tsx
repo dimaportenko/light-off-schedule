@@ -1,35 +1,10 @@
 import React from "react";
 import { SafeAreaView, Text, View } from "react-native";
-import dayjs from "dayjs";
+import { TodayDate } from "../components/main/TodayDate";
 
 import { translate } from "../i18n";
 import tw from "../lib/tailwind";
 import { romeNumberArray } from "../utils/romeNumbers";
-import {
-  uppercaseFirstLetter,
-  uppercaseFirstLetterOfLastWord,
-} from "../utils/strings";
-
-const getCurrentDayTitle = () => {
-  let title = dayjs().format("dddd, DD MMMM");
-  title = uppercaseFirstLetter(title);
-  title = uppercaseFirstLetterOfLastWord(title);
-  return title;
-};
-
-export const TodayDate = () => {
-  return (
-    <>
-      <Text style={tw`text-2xl text-black text-center`}>
-        {getCurrentDayTitle()}
-      </Text>
-      <View style={tw`p-1`} />
-      <Text style={tw`text-3xl text-black text-center`}>
-        {dayjs().format("HH:mm")}
-      </Text>
-    </>
-  );
-};
 
 export const MainScreen = () => {
   const queueIndex = 0;
