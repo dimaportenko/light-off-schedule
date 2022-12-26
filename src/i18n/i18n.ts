@@ -2,9 +2,17 @@ import * as Localization from "expo-localization";
 import i18n from "i18n-js";
 import { I18nManager } from "react-native";
 
+import dayjs from "dayjs";
+
 // if English isn't your default language, move Translations to the appropriate language file.
 import en, { Translations } from "./en";
 import ua from "./ua";
+
+if (Localization.locale.includes("UA")) {
+  require("dayjs/locale/uk");
+
+  dayjs.locale("uk");
+}
 
 i18n.fallbacks = true;
 /**
@@ -15,8 +23,6 @@ i18n.fallbacks = true;
 i18n.translations = { ua, en, "en-US": en, "en-UA": ua, "uk-UA": ua };
 
 i18n.locale = Localization.locale;
-
-console.warn("i18n.locale", i18n.locale);
 
 // handle RTL languages
 export const isRTL = Localization.isRTL;
