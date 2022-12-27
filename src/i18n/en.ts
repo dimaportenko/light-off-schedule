@@ -1,5 +1,16 @@
 const en = {
-  common: {},
+  common: {
+    in: "in",
+    hh: "h",
+    mm: "m",
+    monday: "Monday",
+    tuesday: "Tuesday",
+    wednesday: "Wednesday",
+    thursday: "Thursday",
+    friday: "Friday",
+    saturday: "Saturday",
+    sunday: "Sunday",
+  },
   mainScreen: {
     queue: "Queue",
     nextTurnOn: "Next turn on",
