@@ -20,14 +20,22 @@ i18n.fallbacks = true;
  * the language code is the suffixed with "-US". i.e. if a device is set to English ("en"),
  * if you change to another language and then return to English language code is now "en-US".
  */
-i18n.translations = { ua, en, "en-US": en, "en-UA": ua, "uk-UA": ua };
+i18n.translations = {
+  ua,
+  en,
+  "en-US": en,
+  "en-UA": ua,
+  "uk-UA": ua,
+  "uk-US": ua,
+};
 
 i18n.locale = Localization.locale;
+i18n.defaultLocale = "uk-UA";
 
 // handle RTL languages
-export const isRTL = Localization.isRTL;
-I18nManager.allowRTL(isRTL);
-I18nManager.forceRTL(isRTL);
+// export const isRTL = Localization.isRTL;
+// I18nManager.allowRTL(isRTL);
+// I18nManager.forceRTL(isRTL);
 
 /**
  * Builds up valid keypaths for translations.

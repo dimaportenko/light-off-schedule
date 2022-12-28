@@ -4,6 +4,7 @@
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
+    "android:release:device": "expo run:android --variant Release --device",
     "ios": "expo run:ios",
     "ios:release:device": "npx expo run:ios --configuration Release -d",
     "web": "expo start --web"

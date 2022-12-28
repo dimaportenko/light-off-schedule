@@ -63,18 +63,19 @@ export const schedule: Schedule = [
       { start: "00:00", end: "01:00", type: "on" },
       { start: "01:00", end: "05:00", type: "off" },
       { start: "05:00", end: "13:00", type: "on" },
-      { start: "09:00", end: "17:00", type: "off" },
+      { start: "13:00", end: "17:00", type: "off" },
       { start: "17:00", end: "24:00", type: "on" },
     ],
     // Saturday
     6: [
       { start: "00:00", end: "09:00", type: "on" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "17:00", type: "on" },
-      { start: "17:00", end: "24:00", type: "off" },
+      { start: "13:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "off" },
     ],
     // Sunday
     0: [
+      { start: "00:00", end: "01:00", type: "off" },
       { start: "00:00", end: "05:00", type: "on" },
       { start: "05:00", end: "09:00", type: "off" },
       { start: "09:00", end: "17:00", type: "on" },

@@ -50,7 +50,7 @@ export const nextWillBeInLabel = (time: string, inDays = 0) => {
 
   return (
     translate("common.in") +
-    " " +
+    "\n" +
     hours +
     " " +
     translate("common.hh") +
