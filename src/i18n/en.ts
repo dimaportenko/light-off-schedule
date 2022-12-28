@@ -10,6 +10,8 @@ const en = {
     friday: "Friday",
     saturday: "Saturday",
     sunday: "Sunday",
+
+    done: "Done",
   },
   mainScreen: {
     queue: "Queue",

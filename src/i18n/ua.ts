@@ -11,6 +11,8 @@ const ua = {
     friday: "П'ятниця",
     saturday: "Субота",
     sunday: "Неділя",
+
+    done: "Готово",
   },
   mainScreen: {
     queue: "Черга",

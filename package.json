@@ -2,26 +2,27 @@
   "name": "light-off-schedule",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
+    "start": "npx expo start --dev-client",
+    "android": "npx expo run:android",
     "android:release:device": "expo run:android --variant Release --device",
     "eas:preview": "eas build --profile preview --platform all",
-    "ios": "expo run:ios",
+    "ios": "npx expo run:ios",
     "ios:release:device": "npx expo run:ios --configuration Release -d",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-picker/picker": "2.4.8",
     "dayjs": "^1.11.7",
     "expo": "~47.0.9",
     "expo-localization": "~14.0.0",
+    "expo-splash-screen": "~0.17.5",
     "expo-status-bar": "~1.4.2",
     "i18n-js": "3.9.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
     "react-native-web": "~0.18.9",
-    "twrnc": "^3.5.0",
-    "expo-splash-screen": "~0.17.5"
+    "twrnc": "^3.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
