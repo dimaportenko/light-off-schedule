@@ -9,12 +9,16 @@ import {
 } from "./src/hooks/useForeground";
 
 export default function App() {
-  const [_, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
 
   useForegroundSubscription();
 
+  const reload = () => {
+    setLoading(!loading);
+  };
+
   useForegroundListener(() => {
-    setLoading(true);
+    reload();
   });
 
   // if (loading) {
@@ -27,7 +31,7 @@ export default function App() {
 
   return (
     <View style={tw`flex-1`}>
-      <MainScreen />
+      <MainScreen reload={reload} />
       <StatusBar style="auto" />
     </View>
   );
