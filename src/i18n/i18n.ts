@@ -1,6 +1,5 @@
 import * as Localization from "expo-localization";
 import i18n from "i18n-js";
-import { I18nManager } from "react-native";
 
 import dayjs from "dayjs";
 
@@ -8,9 +7,11 @@ import dayjs from "dayjs";
 import en, { Translations } from "./en";
 import ua from "./ua";
 
-if (Localization.locale.includes("UA")) {
+if (Localization.locale.includes("US")) {
+  require("dayjs/locale/en");
+  dayjs.locale("en");
+} else {
   require("dayjs/locale/uk");
-
   dayjs.locale("uk");
 }
 
