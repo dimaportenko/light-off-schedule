@@ -4,14 +4,21 @@
     "promptToConfigurePushNotifications": false
   },
   "build": {
+    "base": {
+      "autoIncrement": true
+    },
     "development": {
+      "extends": "base",
       "developmentClient": true,
       "distribution": "internal"
     },
     "preview": {
+      "extends": "base",
       "distribution": "internal"
     },
-    "production": {}
+    "production": {
+      "extends": "base",
+    }
   },
   "submit": {
     "production": {}
