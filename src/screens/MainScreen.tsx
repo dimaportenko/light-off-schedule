@@ -2,13 +2,13 @@ import React, { FC, useRef } from "react";
 import {
   Platform,
   RefreshControl,
-  SafeAreaView,
   ScrollView,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 import { CurrentSlotStatus } from "../components/main/CurrentSlotStatus";
 import { NextTimeSlotCount } from "../components/main/NextTimeSlotCount";

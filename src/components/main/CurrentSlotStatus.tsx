@@ -30,7 +30,7 @@ export const CurrentSlotStatus: FC<CurrentSlotStatusProps> = ({
   }
 
   return (
-    <Text style={tw`text-4xl text-center`}>
+    <Text style={tw`text-[40px] text-center`}>
       {nextTimeSlot.type === "on" ? "🌞" : "🌚"}
     </Text>
   );

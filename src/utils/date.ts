@@ -52,11 +52,9 @@ export const nextWillBeInLabel = (time: string, inDays = 0) => {
     translate("common.in") +
     "\n" +
     hours +
-    " " +
     translate("common.hh") +
     " " +
     minutes +
-    " " +
     translate("common.mm")
   );
 };

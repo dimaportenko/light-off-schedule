@@ -4,6 +4,7 @@
   "scripts": {
     "start": "npx expo start --dev-client",
     "android": "npx expo run:android",
+    "android:device": "npx expo run:android --device",
     "android:release:device": "expo run:android --variant Release --device",
     "eas:preview": "eas build --profile preview --platform all",
     "ios": "npx expo run:ios",
@@ -21,6 +22,7 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
+    "react-native-safe-area-context": "4.4.1",
     "react-native-web": "~0.18.9",
     "twrnc": "^3.5.0"
   },
