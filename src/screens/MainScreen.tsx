@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { Picker } from "@react-native-picker/picker";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { observer } from "mobx-react-lite";
 
 import { CurrentSlotStatus } from "../components/main/CurrentSlotStatus";
 import { NextTimeSlotCount } from "../components/main/NextTimeSlotCount";
@@ -19,6 +20,7 @@ import { translate } from "../i18n";
 import tw from "../lib/tailwind";
 import { getCurrentWeekdayIndex, WeekdDayIndexType } from "../utils/date";
 import { romeNumberArray } from "../utils/romeNumbers";
+import { useStore } from "../store";
 
 type MainScreenProps = {
   reload: () => void;
@@ -28,9 +30,9 @@ export const queueTitleByIndex = (index: number) => {
   return romeNumberArray[index] + " " + translate("mainScreen.queue");
 };
 
-export const MainScreen: FC<MainScreenProps> = ({ reload }) => {
+export const MainScreen: FC<MainScreenProps> = observer(({ reload }) => {
+  const { queue } = useStore();
   const [showPicker, setShowPicker] = React.useState(false);
-  const [queueIndex, setQueueIndex] = React.useState(2);
   const weekdayIndex = getCurrentWeekdayIndex();
 
   const pickerRef = useRef<Picker<number>>(null);
@@ -61,7 +63,9 @@ export const MainScreen: FC<MainScreenProps> = ({ reload }) => {
       >
         <TouchableOpacity onPress={open}>
           <Text style={tw`text-3xl text-black text-center`}>
-            {romeNumberArray[queueIndex] + " " + translate("mainScreen.queue")}
+            {romeNumberArray[queue.selectedQueueIndex] +
+              " " +
+              translate("mainScreen.queue")}
           </Text>
         </TouchableOpacity>
 
@@ -71,11 +75,11 @@ export const MainScreen: FC<MainScreenProps> = ({ reload }) => {
 
         <View style={tw`p-4`} />
 
-        <CurrentSlotStatus queueIndex={queueIndex} />
+        <CurrentSlotStatus queueIndex={queue.selectedQueueIndex} />
 
         <View style={tw`p-4`} />
 
-        <NextTimeSlotCount queueIndex={queueIndex} />
+        <NextTimeSlotCount queueIndex={queue.selectedQueueIndex} />
 
         <View style={tw`p-8`} />
         {
@@ -86,7 +90,7 @@ export const MainScreen: FC<MainScreenProps> = ({ reload }) => {
             return (
               <View key={index}>
                 <TodayTimeSlots
-                  queueIndex={queueIndex}
+                  queueIndex={queue.selectedQueueIndex}
                   weekdayIndex={slotWeekdayIndex}
                 />
                 <View style={tw`p-4`} />
@@ -112,8 +116,10 @@ export const MainScreen: FC<MainScreenProps> = ({ reload }) => {
           </View>
           <Picker
             ref={pickerRef}
-            selectedValue={queueIndex}
-            onValueChange={(itemValue) => setQueueIndex(itemValue)}
+            selectedValue={queue.selectedQueueIndex}
+            onValueChange={(itemValue) => {
+              queue.setSelectedQueueIndex(itemValue);
+            }}
           >
             <Picker.Item label={queueTitleByIndex(0)} value={0} />
             <Picker.Item label={queueTitleByIndex(1)} value={1} />
@@ -123,4 +129,4 @@ export const MainScreen: FC<MainScreenProps> = ({ reload }) => {
       )}
     </SafeAreaView>
   );
-};
+});

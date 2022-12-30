@@ -7,6 +7,7 @@ import {
   useForegroundListener,
   useForegroundSubscription,
 } from "./src/hooks/useForeground";
+import { root, StoreProvider } from "./src/store";
 
 export default function App() {
   const [loading, setLoading] = React.useState(false);
@@ -30,9 +31,11 @@ export default function App() {
   // }
 
   return (
-    <View style={tw`flex-1`}>
-      <MainScreen reload={reload} />
-      <StatusBar style="auto" />
-    </View>
+    <StoreProvider value={root}>
+      <View style={tw`flex-1`}>
+        <MainScreen reload={reload} />
+        <StatusBar style="auto" />
+      </View>
+    </StoreProvider>
   );
 }
