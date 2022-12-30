@@ -4,8 +4,8 @@ import i18n from "i18n-js";
 import dayjs from "dayjs";
 
 // if English isn't your default language, move Translations to the appropriate language file.
-import en, { Translations } from "./en";
-import ua from "./ua";
+import en from "./en";
+import ua, { Translations } from "./ua";
 
 if (Localization.locale.includes("US")) {
   require("dayjs/locale/en");

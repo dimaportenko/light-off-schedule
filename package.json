@@ -7,6 +7,7 @@
     "android:device": "npx expo run:android --device",
     "android:release:device": "npx expo run:android --variant Release --device",
     "eas:preview": "eas build --profile preview --platform all",
+    "eas:development": "eas build --profile development --platform all",
     "ios": "npx expo run:ios",
     "ios:release:device": "npx expo run:ios --configuration Release -d",
     "web": "expo start --web"
