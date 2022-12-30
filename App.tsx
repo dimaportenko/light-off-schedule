@@ -1,6 +1,8 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { View } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+
 import tw from "./src/lib/tailwind";
 import { MainScreen } from "./src/screens/MainScreen";
 import {
@@ -31,11 +33,13 @@ export default function App() {
   // }
 
   return (
-    <StoreProvider value={root}>
-      <View style={tw`flex-1`}>
-        <MainScreen reload={reload} />
-        <StatusBar style="auto" />
-      </View>
-    </StoreProvider>
+    <SafeAreaProvider>
+      <StoreProvider value={root}>
+        <View style={tw`flex-1`}>
+          <MainScreen reload={reload} />
+          <StatusBar style="auto" />
+        </View>
+      </StoreProvider>
+    </SafeAreaProvider>
   );
 }

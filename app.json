@@ -19,14 +19,16 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.plabpreview.light-off-schedule"
+      "bundleIdentifier": "com.plabpreview.light-off-schedule",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.plabpreview.lightoffschedule"
+      "package": "com.plabpreview.lightoffschedule",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"

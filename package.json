@@ -5,7 +5,7 @@
     "start": "npx expo start --dev-client",
     "android": "npx expo run:android",
     "android:device": "npx expo run:android --device",
-    "android:release:device": "expo run:android --variant Release --device",
+    "android:release:device": "npx expo run:android --variant Release --device",
     "eas:preview": "eas build --profile preview --platform all",
     "ios": "npx expo run:ios",
     "ios:release:device": "npx expo run:ios --configuration Release -d",
