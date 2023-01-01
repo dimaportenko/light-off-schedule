@@ -1,9 +1,11 @@
 import { autorun, makeAutoObservable, runInAction } from "mobx";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { schedule } from "../data/schedule";
 
 export const createQueueStore = () => {
   const storeKey = "@queue.store";
   const store = makeAutoObservable({
+    schedule,
     selectedQueueIndex: 2,
 
     setSelectedQueueIndex: (index: number) => {

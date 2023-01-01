@@ -20,7 +20,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.plabpreview.light-off-schedule",
-      "buildNumber": "3"
+      "buildNumber": "4"
     },
     "android": {
       "adaptiveIcon": {

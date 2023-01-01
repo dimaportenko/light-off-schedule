@@ -5,6 +5,10 @@
 - [x] time to next slot left
 - [x] time slots day title
 - [x] add next day timeslots same as today
-- [ ] create phone build
-- [ ] add icon
+- [x] create phone build
+- [x] add icon
+- [x] splash screen
+- [x] mobx state with persist logic
+- [ ] move data to the store 
+- [ ] setup notification before next off slot start
 - [ ] add tests
