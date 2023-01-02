@@ -2,6 +2,7 @@ import React, { forwardRef, useRef } from "react";
 import { Platform, TouchableOpacity, View, Text } from "react-native";
 import { observer } from "mobx-react-lite";
 import { Picker } from "@react-native-picker/picker";
+import Animated, {SlideInDown, SlideInUp, SlideOutDown} from "react-native-reanimated";
 
 import tw from "../../lib/tailwind";
 import { translate } from "../../i18n";
@@ -43,7 +44,11 @@ export const QueuePicker = observer<QueuePickerItemProps, QueuePickerRefType>(
     };
 
     return Platform.OS === "android" || showPicker ? (
-      <View style={tw`absolute bottom-0 bg-gray-100 w-100% android:h-0px`}>
+      <Animated.View
+        entering={SlideInDown}
+        exiting={SlideOutDown}
+        style={tw`absolute bottom-0 bg-gray-100 w-100% android:h-0px`}
+      >
         <View
           style={tw` h-50px border-t border-gray-300 items-end justify-center bg-white`}
         >
@@ -71,7 +76,7 @@ export const QueuePicker = observer<QueuePickerItemProps, QueuePickerRefType>(
             />
           ))}
         </Picker>
-      </View>
+      </Animated.View>
     ) : null;
   })
 );

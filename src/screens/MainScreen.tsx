@@ -34,6 +34,10 @@ export const MainScreen: FC<MainScreenProps> = observer(({ reload }) => {
   const [showPicker, setShowPicker] = React.useState(false);
   const weekdayIndex = getCurrentWeekdayIndex();
 
+  const open = () => {
+    queuePickerRef.current?.open();
+  };
+
   return (
     <SafeAreaView style={tw`flex-1 bg-white`}>
       <ScrollView
@@ -42,7 +46,7 @@ export const MainScreen: FC<MainScreenProps> = observer(({ reload }) => {
           <RefreshControl refreshing={false} onRefresh={reload} />
         }
       >
-        <TouchableOpacity onPress={queuePickerRef.current?.open}>
+        <TouchableOpacity onPress={open}>
           <Text style={tw`text-3xl text-black text-center`}>
             {romeNumberArray[queue.selectedQueueIndex] +
               " " +
