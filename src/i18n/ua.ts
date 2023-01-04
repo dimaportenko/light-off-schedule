@@ -18,6 +18,8 @@ const ua = {
     queue: "Черга",
     nextTurnOn: "Наступне включення",
     nextTurnOff: "Наступне вимкнення",
+
+    remindMe: "Нагадати за",
   },
 };
 

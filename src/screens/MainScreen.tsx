@@ -23,6 +23,7 @@ import {
   QueuePicker,
   QueuePickerRefType,
 } from "../components/main/QueuePicker";
+import { AddRiminder } from "../components/main/AddRiminder";
 
 type MainScreenProps = {
   reload: () => void;
@@ -59,11 +60,12 @@ export const MainScreen: FC<MainScreenProps> = observer(({ reload }) => {
         <TodayDate />
 
         <View style={tw`p-4`} />
-
         <CurrentSlotStatus queueIndex={queue.selectedQueueIndex} />
 
         <View style={tw`p-4`} />
+        <AddRiminder />
 
+        <View style={tw`p-4`} />
         <NextTimeSlotCount queueIndex={queue.selectedQueueIndex} />
 
         <View style={tw`p-8`} />

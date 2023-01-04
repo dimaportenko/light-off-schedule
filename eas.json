@@ -1,7 +1,6 @@
 {
   "cli": {
-    "version": ">= 3.0.0",
-    "promptToConfigurePushNotifications": false
+    "version": ">= 3.0.0"
   },
   "build": {
     "base": {
@@ -13,14 +12,14 @@
       "distribution": "internal",
       "ios": {
         "simulator": true
-      }    
+      }
     },
     "preview": {
       "extends": "base",
       "distribution": "internal"
     },
     "production": {
-      "extends": "base",
+      "extends": "base"
     }
   },
   "submit": {

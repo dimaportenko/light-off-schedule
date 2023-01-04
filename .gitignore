@@ -17,3 +17,10 @@ web-build/
 # expo generated
 ios
 android
+
+# builds archives
+*.tar.gz
+
+# local eas builds
+*.bundle 
+*.app

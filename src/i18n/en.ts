@@ -17,6 +17,8 @@ const en = {
     queue: "Queue",
     nextTurnOn: "Next turn on",
     nextTurnOff: "Next turn off",
+
+    remindMe: "Remind me",
   },
 };
 
