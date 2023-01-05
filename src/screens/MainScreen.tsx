@@ -23,7 +23,7 @@ import {
   QueuePicker,
   QueuePickerRefType,
 } from "../components/main/QueuePicker";
-import { AddRiminder } from "../components/main/AddRiminder";
+import { AddRiminder } from "../components/reminder/AddReminder";
 
 type MainScreenProps = {
   reload: () => void;

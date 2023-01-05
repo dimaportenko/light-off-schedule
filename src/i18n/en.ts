@@ -20,6 +20,11 @@ const en = {
 
     remindMe: "Remind me",
   },
+  notifications: {
+    permissionDenied: "Permission to send notifications was denied",
+    title: "Light Off Schedule",
+    body: "Next turn off in",
+  },
 };
 
 export default en;

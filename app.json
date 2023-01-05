@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Графік Відключень",
+    "name": "Розклад Відключень",
     "slug": "light-off-schedule",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,7 +18,7 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.plabpreview.light-off-schedule",
-      "buildNumber": "8"
+      "buildNumber": "9"
     },
     "android": {
       "adaptiveIcon": {
@@ -36,12 +36,13 @@
         "projectId": "7027993e-c322-41ae-8794-d20e4296b806"
       }
     },
+    "userInterfaceStyle": "automatic",
     "plugins": [
       [
         "expo-notifications",
         {
           "icon": "./local/assets/notification-icon.png",
-          "color": "#ffffff",
+          "color": "#ffffff"
         }
       ]
     ]

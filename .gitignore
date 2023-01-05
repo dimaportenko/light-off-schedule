@@ -24,3 +24,4 @@ android
 # local eas builds
 *.bundle 
 *.app
+*.ipa
