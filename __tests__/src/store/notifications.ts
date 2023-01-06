@@ -18,30 +18,6 @@ describe("schedule reminder notification", () => {
             "hour": 4,
             "minute": 45,
             "repeats": true,
-            "weekday": 0,
-          },
-        },
-        Object {
-          "content": Object {
-            "body": "Наступне вимкнення о 17:00",
-            "title": "Розклад вимкнення світла",
-          },
-          "trigger": Object {
-            "hour": 16,
-            "minute": 45,
-            "repeats": true,
-            "weekday": 0,
-          },
-        },
-        Object {
-          "content": Object {
-            "body": "Наступне вимкнення о 05:00",
-            "title": "Розклад вимкнення світла",
-          },
-          "trigger": Object {
-            "hour": 4,
-            "minute": 45,
-            "repeats": true,
             "weekday": 1,
           },
         },
@@ -59,54 +35,6 @@ describe("schedule reminder notification", () => {
         },
         Object {
           "content": Object {
-            "body": "Наступне вимкнення о 01:00",
-            "title": "Розклад вимкнення світла",
-          },
-          "trigger": Object {
-            "hour": 0,
-            "minute": 45,
-            "repeats": true,
-            "weekday": 2,
-          },
-        },
-        Object {
-          "content": Object {
-            "body": "Наступне вимкнення о 13:00",
-            "title": "Розклад вимкнення світла",
-          },
-          "trigger": Object {
-            "hour": 12,
-            "minute": 45,
-            "repeats": true,
-            "weekday": 2,
-          },
-        },
-        Object {
-          "content": Object {
-            "body": "Наступне вимкнення о 09:00",
-            "title": "Розклад вимкнення світла",
-          },
-          "trigger": Object {
-            "hour": 8,
-            "minute": 45,
-            "repeats": true,
-            "weekday": 3,
-          },
-        },
-        Object {
-          "content": Object {
-            "body": "Наступне вимкнення о 21:00",
-            "title": "Розклад вимкнення світла",
-          },
-          "trigger": Object {
-            "hour": 20,
-            "minute": 45,
-            "repeats": true,
-            "weekday": 3,
-          },
-        },
-        Object {
-          "content": Object {
             "body": "Наступне вимкнення о 05:00",
             "title": "Розклад вимкнення світла",
           },
@@ -114,7 +42,7 @@ describe("schedule reminder notification", () => {
             "hour": 4,
             "minute": 45,
             "repeats": true,
-            "weekday": 4,
+            "weekday": 2,
           },
         },
         Object {
@@ -126,7 +54,7 @@ describe("schedule reminder notification", () => {
             "hour": 16,
             "minute": 45,
             "repeats": true,
-            "weekday": 4,
+            "weekday": 2,
           },
         },
         Object {
@@ -138,7 +66,7 @@ describe("schedule reminder notification", () => {
             "hour": 0,
             "minute": 45,
             "repeats": true,
-            "weekday": 5,
+            "weekday": 3,
           },
         },
         Object {
@@ -150,7 +78,7 @@ describe("schedule reminder notification", () => {
             "hour": 12,
             "minute": 45,
             "repeats": true,
-            "weekday": 5,
+            "weekday": 3,
           },
         },
         Object {
@@ -162,7 +90,7 @@ describe("schedule reminder notification", () => {
             "hour": 8,
             "minute": 45,
             "repeats": true,
-            "weekday": 6,
+            "weekday": 4,
           },
         },
         Object {
@@ -174,7 +102,79 @@ describe("schedule reminder notification", () => {
             "hour": 20,
             "minute": 45,
             "repeats": true,
+            "weekday": 4,
+          },
+        },
+        Object {
+          "content": Object {
+            "body": "Наступне вимкнення о 05:00",
+            "title": "Розклад вимкнення світла",
+          },
+          "trigger": Object {
+            "hour": 4,
+            "minute": 45,
+            "repeats": true,
+            "weekday": 5,
+          },
+        },
+        Object {
+          "content": Object {
+            "body": "Наступне вимкнення о 17:00",
+            "title": "Розклад вимкнення світла",
+          },
+          "trigger": Object {
+            "hour": 16,
+            "minute": 45,
+            "repeats": true,
+            "weekday": 5,
+          },
+        },
+        Object {
+          "content": Object {
+            "body": "Наступне вимкнення о 01:00",
+            "title": "Розклад вимкнення світла",
+          },
+          "trigger": Object {
+            "hour": 0,
+            "minute": 45,
+            "repeats": true,
             "weekday": 6,
+          },
+        },
+        Object {
+          "content": Object {
+            "body": "Наступне вимкнення о 13:00",
+            "title": "Розклад вимкнення світла",
+          },
+          "trigger": Object {
+            "hour": 12,
+            "minute": 45,
+            "repeats": true,
+            "weekday": 6,
+          },
+        },
+        Object {
+          "content": Object {
+            "body": "Наступне вимкнення о 09:00",
+            "title": "Розклад вимкнення світла",
+          },
+          "trigger": Object {
+            "hour": 8,
+            "minute": 45,
+            "repeats": true,
+            "weekday": 7,
+          },
+        },
+        Object {
+          "content": Object {
+            "body": "Наступне вимкнення о 21:00",
+            "title": "Розклад вимкнення світла",
+          },
+          "trigger": Object {
+            "hour": 20,
+            "minute": 45,
+            "repeats": true,
+            "weekday": 7,
           },
         },
       ]

@@ -26,7 +26,13 @@ export const scheduleLocalWeeklyNotifications = async (
 
   // schedule notifications
   notificaitonInputs.forEach((input) => {
-    Notifications.scheduleNotificationAsync(input);
+    Notifications.scheduleNotificationAsync(input)
+      .then((id) => {
+        console.log("Scheduled notification with id: ", id);
+      })
+      .catch((error) => {
+        console.warn(input, error);
+      });
   });
 
   // });

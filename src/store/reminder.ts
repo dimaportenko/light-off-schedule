@@ -52,7 +52,7 @@ export const prepareNotifiationsInput = (
           hour: h,
           minute: m,
           repeats: true,
-          weekday: weekDay,
+          weekday: weekDay + 1,
         },
       });
     });
