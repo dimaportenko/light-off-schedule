@@ -14,19 +14,26 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.plabpreview.light-off-schedule",
-      "buildNumber": "9"
+      "buildNumber": "10"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
+      "googleServicesFile": "./assets/android/google-services.json",
       "package": "com.plabpreview.lightoffschedule",
-      "versionCode": 4
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "SCHEDULE_EXACT_ALARM"
+      ],
+      "versionCode": 6
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -36,12 +43,11 @@
         "projectId": "7027993e-c322-41ae-8794-d20e4296b806"
       }
     },
-    "userInterfaceStyle": "automatic",
     "plugins": [
       [
         "expo-notifications",
         {
-          "icon": "./local/assets/notification-icon.png",
+          "icon": "./assets/android/notification-icon.png",
           "color": "#ffffff"
         }
       ]
