@@ -5,7 +5,7 @@
   "build": {
     "base": {
       "autoIncrement": true,
-      "serviceAccountKeyPath": "./assets/android/google-services.json",
+      "serviceAccountKeyPath": "./assets/android/google-services.json"
     },
     "development": {
       "extends": "base",
