@@ -27,13 +27,12 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "googleServicesFile": "./assets/android/google-services.json",
       "package": "com.plabpreview.lightoffschedule",
       "permissions": [
         "RECEIVE_BOOT_COMPLETED",
         "SCHEDULE_EXACT_ALARM"
       ],
-      "versionCode": 7
+      "versionCode": 8
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -47,7 +46,7 @@
       [
         "expo-notifications",
         {
-          "icon": "./assets/android/notification-icon.png",
+          "icon": "./assets/notification-icon.png",
           "color": "#ffffff"
         }
       ]

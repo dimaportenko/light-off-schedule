@@ -26,6 +26,4 @@ android
 *.app
 *.ipa
 
-# android secrets
-./assets/android/google-services.json
 
