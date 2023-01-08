@@ -37,6 +37,7 @@ export const AddRiminder = observer(() => {
         mode="time"
         // convert string HH:mm to Date with dayjs
         date={dayjs(queue.reminderTime, "HH:mm").toDate()}
+        is24Hour
       />
     </View>
   );

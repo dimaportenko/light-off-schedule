@@ -9,6 +9,7 @@
     "eas:preview": "eas build --profile preview",
     "eas:preview:all": "eas build --profile preview --platform all",
     "eas:preview:ios:local": "eas build --profile preview --platform ios --local",
+    "eas:preview:android:local": "eas build --profile preview --platform android --local",
     "eas:development:local": "eas build --profile development --local",
     "eas:development:all": "eas build --profile development --platform all",
     "ios": "npx expo run:ios",

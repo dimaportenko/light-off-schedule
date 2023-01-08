@@ -2,51 +2,8 @@ import { autorun, makeAutoObservable, runInAction } from "mobx";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Notifications from "expo-notifications";
 
-import { schedule, QueueSchedule } from "../data/schedule";
-import { Alert } from "react-native";
-import { translate } from "../i18n";
-import { prepareNotifiationsInput } from "./reminder";
-
-export const scheduleLocalWeeklyNotifications = async (
-  queueSchedule: QueueSchedule,
-  time: string
-) => {
-  // request permissions
-  const { status } = await Notifications.requestPermissionsAsync();
-  if (status !== "granted") {
-    Alert.alert(translate("notifications.permissionDenied"));
-    return;
-  }
-
-  // cancel all notifications
-  await Notifications.cancelAllScheduledNotificationsAsync();
-
-  // prepare notifications
-  const notificaitonInputs = prepareNotifiationsInput(queueSchedule, time);
-
-  // schedule notifications
-  notificaitonInputs.forEach((input) => {
-    Notifications.scheduleNotificationAsync(input)
-      .then((id) => {
-        console.log("Scheduled notification with id: ", id);
-      })
-      .catch((error) => {
-        console.warn(input, error);
-      });
-  });
-
-  // });
-
-  // Notifications.scheduleNotificationAsync({
-  //   content: {
-  //     title: translate("notifications.title"),
-  //     body: translate("notifications.body"),
-  //   },
-  //   // trigger in 5 seconds
-  //   trigger: {
-  //     seconds: 5,
-  //   },
-};
+import { schedule } from "../data/schedule";
+import { scheduleLocalWeeklyNotifications } from "./reminder";
 
 export const createQueueStore = () => {
   const storeKey = "@queue.store";

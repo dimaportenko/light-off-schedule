@@ -32,7 +32,7 @@
         "RECEIVE_BOOT_COMPLETED",
         "SCHEDULE_EXACT_ALARM"
       ],
-      "versionCode": 8
+      "versionCode": 11
     },
     "web": {
       "favicon": "./assets/favicon.png"

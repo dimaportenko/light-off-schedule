@@ -1,4 +1,7 @@
 import * as Notifications from "expo-notifications";
+import { requestPermissionsAsync } from "expo-notifications";
+import { Alert, Platform } from "react-native";
+import { root } from ".";
 
 import { QueueSchedule } from "../data/schedule";
 import { translate } from "../i18n";
@@ -58,4 +61,55 @@ export const prepareNotifiationsInput = (
     });
   });
   return notificaitonInputs;
+};
+
+export const requestNotificationPermissions = async () => {
+  if (Platform.OS === "android") {
+    try {
+      await Notifications.setNotificationChannelAsync("default", {
+        name: "default",
+        importance: Notifications.AndroidImportance.MAX,
+        vibrationPattern: [0, 250, 250, 250],
+        lightColor: "#FF231F7C",
+      });
+    } catch (error: any) {
+      console.log("Error", error);
+    }
+  }
+
+  const { status } = await Notifications.getPermissionsAsync();
+  return status;
+};
+
+export const scheduleLocalWeeklyNotifications = async (
+  queueSchedule: QueueSchedule,
+  time: string
+) => {
+  // request permissions
+  const { status } = await requestPermissionsAsync();
+  if (status !== "granted") {
+    console.log("status", status);
+    Alert.alert(translate("notifications.permissionDenied"));
+
+    root.queue.setReminderEnabled(false);
+
+    return;
+  }
+
+  // cancel all notifications
+  await Notifications.cancelAllScheduledNotificationsAsync();
+
+  // prepare notifications
+  const notificaitonInputs = prepareNotifiationsInput(queueSchedule, time);
+
+  // schedule notifications
+  notificaitonInputs.forEach((input) => {
+    Notifications.scheduleNotificationAsync(input)
+      .then((id) => {
+        console.log("Scheduled notification with id: ", id);
+      })
+      .catch((error) => {
+        console.warn(input, error);
+      });
+  });
 };
