@@ -2,7 +2,8 @@
   "name": "light-off-schedule",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx expo start --dev-client",
+    "start": "npx expo start",
+    "start:dev": "npx expo start --dev-client",
     "android": "npx expo run:android",
     "android:device": "npx expo run:android --device",
     "android:release:device": "npx expo run:android --variant Release --device",

@@ -50,6 +50,7 @@ export const prepareNotifiationsInput = (
         content: {
           title: translate("notifications.title"),
           body: `${translate("notifications.body")} ${timeSlot.start}`,
+          sound: true,
         },
         trigger: {
           hour: h,
@@ -67,7 +68,7 @@ export const requestNotificationPermissions = async () => {
   if (Platform.OS === "android") {
     try {
       await Notifications.setNotificationChannelAsync("default", {
-        name: "default",
+        name: "Reminders",
         importance: Notifications.AndroidImportance.MAX,
         vibrationPattern: [0, 250, 250, 250],
         lightColor: "#FF231F7C",
@@ -86,7 +87,7 @@ export const scheduleLocalWeeklyNotifications = async (
   time: string
 ) => {
   // request permissions
-  const { status } = await requestPermissionsAsync();
+  const status = await requestNotificationPermissions();
   if (status !== "granted") {
     console.log("status", status);
     Alert.alert(translate("notifications.permissionDenied"));
