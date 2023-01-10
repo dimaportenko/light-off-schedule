@@ -5,7 +5,8 @@
   },
   "build": {
     "base": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "channel": "base"
     },
     "development": {
       "extends": "base",
@@ -13,14 +14,17 @@
       "distribution": "internal",
       "ios": {
         "simulator": true
-      }
+      },
+      "channel": "development"
     },
     "preview": {
       "extends": "base",
-      "distribution": "internal"
+      "distribution": "internal",
+      "channel": "preview"
     },
     "production": {
-      "extends": "base"
+      "extends": "base",
+      "channel": "production"
     }
   },
   "submit": {
