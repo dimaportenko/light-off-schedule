@@ -25,11 +25,9 @@ import {
 } from "../components/main/QueuePicker";
 import { AddRiminder } from "../components/reminder/AddReminder";
 
-type MainScreenProps = {
-  reload: () => void;
-};
+type MainScreenProps = {};
 
-export const MainScreen: FC<MainScreenProps> = observer(({ reload }) => {
+export const MainScreen: FC<MainScreenProps> = observer(() => {
   const queuePickerRef = useRef<QueuePickerRefType>(null);
   const { queue } = useStore();
   const [showPicker, setShowPicker] = React.useState(false);
@@ -44,7 +42,10 @@ export const MainScreen: FC<MainScreenProps> = observer(({ reload }) => {
       <ScrollView
         style={tw`flex-1 p-6`}
         refreshControl={
-          <RefreshControl refreshing={false} onRefresh={reload} />
+          <RefreshControl
+            refreshing={queue.fetchScheduleStatus === "pending"}
+            onRefresh={queue.fetchSchedule}
+          />
         }
       >
         <TouchableOpacity onPress={open}>

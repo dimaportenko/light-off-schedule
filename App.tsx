@@ -14,31 +14,17 @@ import {
 import { root, StoreProvider } from "./src/store";
 
 export default function App() {
-  const [loading, setLoading] = React.useState(false);
-
   useForegroundSubscription();
 
-  const reload = () => {
-    setLoading(!loading);
-  };
-
   useForegroundListener(() => {
-    reload();
+    root.queue.fetchSchedule();
   });
-
-  // if (loading) {
-  //   return (
-  //     <View style={tw`flex-1 bg-white justify-center items-center`}>
-  //       <ActivityIndicator size="large" />
-  //     </View>
-  //   );
-  // }
 
   return (
     <SafeAreaProvider>
       <StoreProvider value={root}>
         <View style={tw`flex-1`}>
-          <MainScreen reload={reload} />
+          <MainScreen />
           <StatusBar style="auto" />
         </View>
       </StoreProvider>

@@ -10,6 +10,7 @@ export const createQueueStore = () => {
   const store = makeAutoObservable({
     schedule,
     selectedQueueIndex: 2,
+    fetchScheduleStatus: "idle",
 
     get selectedQueueSchedule() {
       return store.schedule[store.selectedQueueIndex];
@@ -28,6 +29,27 @@ export const createQueueStore = () => {
 
     setReminderTime: (time: string) => {
       store.reminderTime = time;
+    },
+
+    fetchSchedule: async () => {
+      store.fetchScheduleStatus = "pending";
+      try {
+        const response = await fetch(
+          "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v1/schedule.json"
+        );
+        const data = await response.json();
+        console.log("fetchSchedule", data);
+
+        runInAction(() => {
+          store.schedule = data;
+          store.fetchScheduleStatus = "done";
+        });
+      } catch (error) {
+        console.log(error);
+        runInAction(() => {
+          store.fetchScheduleStatus = "error";
+        });
+      }
     },
   });
 
