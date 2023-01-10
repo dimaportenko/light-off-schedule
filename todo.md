@@ -9,6 +9,9 @@
 - [x] add icon
 - [x] splash screen
 - [x] mobx state with persist logic
-- [ ] move data to the store 
-- [ ] setup notification before next off slot start
-- [ ] add tests
+- [x] move data to the store 
+- [x] setup notification before next off slot start
+- [x] add tests
+- [ ] refactor store (move reminder to another store)
+- [ ] fetch data from the git repo
+- [ ] fix refresh next turn off feature 

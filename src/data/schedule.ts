@@ -9,9 +9,9 @@ export type TimeSlot = {
   type: TimeSlotType;
 };
 
-type DaySchedule = TimeSlot[];
+export type DaySchedule = TimeSlot[];
 
-type QueueSchedule = {
+export type QueueSchedule = {
   0: DaySchedule;
   1: DaySchedule;
   2: DaySchedule;

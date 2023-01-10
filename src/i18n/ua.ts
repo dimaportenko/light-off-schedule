@@ -18,6 +18,13 @@ const ua = {
     queue: "Черга",
     nextTurnOn: "Наступне включення",
     nextTurnOff: "Наступне вимкнення",
+
+    remindMe: "Нагадати за",
+  },
+  notifications: {
+    permissionDenied: "Доступ до нагадувань заборонено",
+    title: "Розклад вимкнення світла",
+    body: "Наступне вимкнення о",
   },
 };
 

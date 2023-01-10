@@ -17,6 +17,13 @@ const en = {
     queue: "Queue",
     nextTurnOn: "Next turn on",
     nextTurnOff: "Next turn off",
+
+    remindMe: "Remind me",
+  },
+  notifications: {
+    permissionDenied: "Permission to send notifications was denied",
+    title: "Light Off Schedule",
+    body: "Next turn off in",
   },
 };
 

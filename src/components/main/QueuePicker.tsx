@@ -2,7 +2,7 @@ import React, { forwardRef, useRef } from "react";
 import { Platform, TouchableOpacity, View, Text } from "react-native";
 import { observer } from "mobx-react-lite";
 import { Picker } from "@react-native-picker/picker";
-import Animated, {SlideInDown, SlideInUp, SlideOutDown} from "react-native-reanimated";
+import Animated, { SlideInDown, SlideOutDown } from "react-native-reanimated";
 
 import tw from "../../lib/tailwind";
 import { translate } from "../../i18n";
@@ -49,18 +49,20 @@ export const QueuePicker = observer<QueuePickerItemProps, QueuePickerRefType>(
         exiting={SlideOutDown}
         style={tw`absolute bottom-0 bg-gray-100 w-100% android:h-0px`}
       >
-        <View
-          style={tw` h-50px border-t border-gray-300 items-end justify-center bg-white`}
-        >
-          <TouchableOpacity
-            onPress={close}
-            style={tw`h-50px pr-4 justify-center`}
+        {Platform.OS === "ios" ? (
+          <View
+            style={tw` h-50px border-t border-gray-300 items-end justify-center bg-white`}
           >
-            <Text style={tw`text-center text-blue-500 text-xl`}>
-              {translate("common.done")}
-            </Text>
-          </TouchableOpacity>
-        </View>
+            <TouchableOpacity
+              onPress={close}
+              style={tw`h-50px pr-4 justify-center`}
+            >
+              <Text style={tw`text-center text-blue-500 text-xl`}>
+                {translate("common.done")}
+              </Text>
+            </TouchableOpacity>
+          </View>
+        ) : null}
         <Picker
           ref={pickerRef}
           selectedValue={queue.selectedQueueIndex}
