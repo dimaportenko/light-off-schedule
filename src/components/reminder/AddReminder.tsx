@@ -10,7 +10,7 @@ import { useStore } from "../../store";
 import { translate } from "../../i18n";
 
 export const AddRiminder = observer(() => {
-  const { queue } = useStore();
+  const { reminder } = useStore();
   const [timePickerVisible, setTimePickerVisible] = React.useState(false);
 
   return (
@@ -18,26 +18,29 @@ export const AddRiminder = observer(() => {
       <TouchableOpacity onPress={() => setTimePickerVisible(true)}>
         <Text style={tw`text-xl`}>
           {translate("mainScreen.remindMe")}{" "}
-          <Text style={tw`text-xl font-bold`}>{queue.reminderTime}</Text>
+          <Text style={tw`text-xl font-bold`}>{reminder.reminderTime}</Text>
         </Text>
       </TouchableOpacity>
       <Switch
-        onValueChange={() => queue.setReminderEnabled(!queue.reminderEnabled)}
-        value={queue.reminderEnabled}
+        onValueChange={() =>
+          reminder.setReminderEnabled(!reminder.reminderEnabled)
+        }
+        value={reminder.reminderEnabled}
       />
       <DateTimePicker
         isVisible={timePickerVisible}
         onConfirm={(date) => {
           // convert Date to string HH:mm with dayjs
           const time = dayjs(date).format("HH:mm");
-          queue.setReminderTime(time);
+          reminder.setReminderTime(time);
           setTimePickerVisible(false);
         }}
         onCancel={() => setTimePickerVisible(false)}
         mode="time"
+        // mode={Platform.select({ ios: "countdown", android: "spinner" }) ?? "time"}
         // convert string HH:mm to Date with dayjs
-        date={dayjs(queue.reminderTime, "HH:mm").toDate()}
-        is24Hour
+        date={dayjs(reminder.reminderTime, "HH:mm").toDate()}
+        is24Hour={true}
       />
     </View>
   );

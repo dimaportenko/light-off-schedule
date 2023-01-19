@@ -1,40 +1,19 @@
-import { autorun, makeAutoObservable, runInAction } from "mobx";
-import * as Notifications from "expo-notifications";
-import { makePersistable } from "mobx-persist-store";
+import { makeAutoObservable, runInAction } from "mobx";
+import { makePersistable, stopPersisting } from "mobx-persist-store";
 
 import { schedule } from "../data/schedule";
-import { scheduleLocalWeeklyNotifications } from "./reminder";
 
 export class QueueStore {
   schedule = schedule;
   selectedQueueIndex = 2;
   fetchScheduleStatus = "idle";
 
-  reminderEnabled = false;
-  reminderTime = "00:15";
-
   constructor() {
     makeAutoObservable(this);
 
     makePersistable(this, {
       name: "QueueStore",
-      properties: [
-        "schedule",
-        "selectedQueueIndex",
-        "reminderEnabled",
-        "reminderTime",
-      ],
-    });
-
-    autorun(() => {
-      if (this.reminderEnabled) {
-        scheduleLocalWeeklyNotifications(
-          this.selectedQueueSchedule,
-          this.reminderTime
-        );
-      } else {
-        Notifications.cancelAllScheduledNotificationsAsync();
-      }
+      properties: ["schedule", "selectedQueueIndex"],
     });
   }
 
@@ -44,14 +23,6 @@ export class QueueStore {
 
   setSelectedQueueIndex = (index: number) => {
     this.selectedQueueIndex = index;
-  };
-
-  setReminderEnabled = (enabled: boolean) => {
-    this.reminderEnabled = enabled;
-  };
-
-  setReminderTime = (time: string) => {
-    this.reminderTime = time;
   };
 
   fetchSchedule = async () => {
@@ -74,4 +45,8 @@ export class QueueStore {
       });
     }
   };
+
+  stopStore() {
+    stopPersisting(this);
+  }
 }

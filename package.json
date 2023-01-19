@@ -17,6 +17,7 @@
     "ios": "npx expo run:ios",
     "ios:release:device": "npx expo run:ios --configuration Release -d",
     "ios:debug:device": "npx expo run:ios --configuration Debug -d",
+    "validate": "npx tsc",
     "test": "TZ=Europe/Kiev jest __tests__",
     "web": "expo start --web"
   },
