@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Switch, TouchableOpacity } from "react-native";
+import { View, Text, Switch, TouchableOpacity, Platform } from "react-native";
 import dayjs from "dayjs";
 import DateTimePicker from "react-native-modal-datetime-picker";
 
@@ -36,11 +36,12 @@ export const AddRiminder = observer(() => {
           setTimePickerVisible(false);
         }}
         onCancel={() => setTimePickerVisible(false)}
-        mode="time"
-        // mode={Platform.select({ ios: "countdown", android: "spinner" }) ?? "time"}
+        // mode="time"
+        // @ts-ignore
+        mode={Platform.select({ ios: "countdown", android: "time" }) ?? "time"}
         // convert string HH:mm to Date with dayjs
         date={dayjs(reminder.reminderTime, "HH:mm").toDate()}
-        is24Hour={true}
+        is24Hour
       />
     </View>
   );
