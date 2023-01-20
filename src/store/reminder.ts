@@ -1,5 +1,4 @@
 import * as Notifications from "expo-notifications";
-import { requestPermissionsAsync } from "expo-notifications";
 import { Alert, Platform } from "react-native";
 import { root } from ".";
 
@@ -78,7 +77,7 @@ export const requestNotificationPermissions = async () => {
     }
   }
 
-  const { status } = await Notifications.getPermissionsAsync();
+  const { status } = await Notifications.requestPermissionsAsync();
   return status;
 };
 
@@ -92,7 +91,7 @@ export const scheduleLocalWeeklyNotifications = async (
     console.log("status", status);
     Alert.alert(translate("notifications.permissionDenied"));
 
-    root.queue.setReminderEnabled(false);
+    root.reminder.setReminderEnabled(false);
 
     return;
   }

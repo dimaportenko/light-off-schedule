@@ -1,99 +1,52 @@
-import { autorun, makeAutoObservable, runInAction } from "mobx";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import * as Notifications from "expo-notifications";
+import { makeAutoObservable, runInAction } from "mobx";
+import { makePersistable, stopPersisting } from "mobx-persist-store";
 
 import { schedule } from "../data/schedule";
-import { scheduleLocalWeeklyNotifications } from "./reminder";
 
-export const createQueueStore = () => {
-  const storeKey = "@queue.store";
-  const store = makeAutoObservable({
-    schedule,
-    selectedQueueIndex: 2,
-    fetchScheduleStatus: "idle",
+export class QueueStore {
+  schedule = schedule;
+  selectedQueueIndex = 2;
+  fetchScheduleStatus = "idle";
 
-    get selectedQueueSchedule() {
-      return store.schedule[store.selectedQueueIndex];
-    },
+  constructor() {
+    makeAutoObservable(this);
 
-    reminderEnabled: false,
-    reminderTime: "00:15",
+    makePersistable(this, {
+      name: "QueueStore",
+      properties: ["schedule", "selectedQueueIndex"],
+    });
+  }
 
-    setSelectedQueueIndex: (index: number) => {
-      store.selectedQueueIndex = index;
-    },
+  get selectedQueueSchedule() {
+    return this.schedule[this.selectedQueueIndex];
+  }
 
-    setReminderEnabled: (enabled: boolean) => {
-      store.reminderEnabled = enabled;
-    },
+  setSelectedQueueIndex = (index: number) => {
+    this.selectedQueueIndex = index;
+  };
 
-    setReminderTime: (time: string) => {
-      store.reminderTime = time;
-    },
-
-    fetchSchedule: async () => {
-      store.fetchScheduleStatus = "pending";
-      try {
-        const response = await fetch(
-          "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v1/schedule.json"
-        );
-        const data = await response.json();
-        console.log("fetchSchedule", data);
-
-        runInAction(() => {
-          store.schedule = data;
-          store.fetchScheduleStatus = "done";
-        });
-      } catch (error) {
-        console.log(error);
-        runInAction(() => {
-          store.fetchScheduleStatus = "error";
-        });
-      }
-    },
-  });
-
-  autorun(() => {
-    if (store.reminderEnabled) {
-      scheduleLocalWeeklyNotifications(
-        store.selectedQueueSchedule,
-        store.reminderTime
+  fetchSchedule = async () => {
+    this.fetchScheduleStatus = "pending";
+    try {
+      const response = await fetch(
+        "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v1/schedule.json"
       );
-    } else {
-      Notifications.cancelAllScheduledNotificationsAsync();
-    }
-  });
+      const data = await response.json();
+      console.log("fetchSchedule", data);
 
-  const hydrate = async () => {
-    const state = await AsyncStorage.getItem(storeKey);
-
-    if (state) {
-      const parsedState = JSON.parse(state);
       runInAction(() => {
-        store.selectedQueueIndex = parsedState.selectedQueueIndex;
-        store.reminderEnabled = parsedState.reminderEnabled ?? false;
-        store.reminderTime = parsedState.reminderTime ?? "00:15";
+        this.schedule = data;
+        this.fetchScheduleStatus = "done";
+      });
+    } catch (error) {
+      console.log(error);
+      runInAction(() => {
+        this.fetchScheduleStatus = "error";
       });
     }
   };
 
-  const persist = async () => {
-    const state = JSON.stringify({
-      selectedQueueIndex: store.selectedQueueIndex,
-      reminderEnabled: store.reminderEnabled,
-      reminderTime: store.reminderTime,
-    });
-
-    try {
-      await AsyncStorage.setItem(storeKey, state);
-    } catch (error) {
-      console.warn("Could not persist data", error);
-    }
-  };
-
-  hydrate().then(() => {
-    autorun(persist);
-  });
-
-  return store;
-};
+  stopStore() {
+    stopPersisting(this);
+  }
+}

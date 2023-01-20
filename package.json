@@ -17,6 +17,7 @@
     "ios": "npx expo run:ios",
     "ios:release:device": "npx expo run:ios --configuration Release -d",
     "ios:debug:device": "npx expo run:ios --configuration Debug -d",
+    "validate": "npx tsc",
     "test": "TZ=Europe/Kiev jest __tests__",
     "web": "expo start --web"
   },
@@ -35,6 +36,7 @@
     "expo-updates": "~0.15.6",
     "i18n-js": "3.9.2",
     "mobx": "^6.7.0",
+    "mobx-persist-store": "^1.1.3",
     "mobx-react-lite": "^3.4.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
