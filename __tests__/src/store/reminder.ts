@@ -12,6 +12,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 05:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -24,6 +25,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 17:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -36,6 +38,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 05:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -48,6 +51,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 17:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -60,6 +64,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 01:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -72,6 +77,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 13:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -84,6 +90,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 09:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -96,6 +103,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 21:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -108,6 +116,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 05:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -120,6 +129,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 17:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -132,6 +142,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 01:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -144,6 +155,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 13:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -156,6 +168,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 09:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
@@ -168,6 +181,7 @@ describe("schedule reminder notification", () => {
         Object {
           "content": Object {
             "body": "Наступне вимкнення о 21:00",
+            "sound": true,
             "title": "Розклад вимкнення світла",
           },
           "trigger": Object {
