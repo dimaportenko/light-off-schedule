@@ -6,7 +6,10 @@
   "build": {
     "base": {
       "autoIncrement": true,
-      "channel": "base"
+      "channel": "base",
+      "ios": {
+        "resourceClass": "m1-medium"
+      }
     },
     "development": {
       "extends": "base",
