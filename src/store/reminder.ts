@@ -29,7 +29,7 @@ export const prepareNotifiationsInput = (
       }
 
       // skip light on slots
-      if (timeSlot.type === "on") {
+      if (timeSlot.type !== "off") {
         return;
       }
 

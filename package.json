@@ -14,6 +14,7 @@
     "eas:development:local": "eas build --profile development --local",
     "eas:development:all": "eas build --profile development --platform all",
     "eas:update": "eas update --auto",
+    "generate:db": "npx ts-node ./scripts/generate-db.ts",
     "ios": "npx expo run:ios",
     "ios:release:device": "npx expo run:ios --configuration Release -d",
     "ios:debug:device": "npx expo run:ios --configuration Debug -d",
