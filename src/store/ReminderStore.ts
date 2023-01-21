@@ -2,7 +2,7 @@ import { autorun, makeAutoObservable } from "mobx";
 import { makePersistable } from "mobx-persist-store";
 import * as Notifications from "expo-notifications";
 
-import { RootStore } from ".";
+import { RootStore } from "./RootStore";
 import { scheduleLocalWeeklyNotifications } from "./reminder";
 
 export class ReminderStore {

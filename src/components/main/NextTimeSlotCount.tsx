@@ -30,11 +30,21 @@ export const NextTimeSlotCount: FC<NextTimeSlotCountProps> = observer(
     const weekdayIndex = getCurrentWeekdayIndex();
     // get time slots for the current weekday
     const queueSlots = queue.schedule[queueIndex][weekdayIndex];
+
+    const currentTimeSlot = queueSlots.find(
+      (slot) =>
+        dayjs().isAfter(dayjs(slot.start, "HH:mm")) &&
+        dayjs().isBefore(dayjs(slot.end, "HH:mm"))
+    );
     // today dayjs object with start time
     // get the next time slot
     let nextTimeSlot = queueSlots.find((slot) => {
       const startTime = dayjs(slot.start, "HH:mm");
-      return startTime.isAfter(dayjs());
+      if (currentTimeSlot?.type === "off") {
+        return startTime.isAfter(dayjs());
+      } else {
+        return startTime.isAfter(dayjs()) && slot.type === "off";
+      }
     });
 
     let timeToNextTimeSlot: string;

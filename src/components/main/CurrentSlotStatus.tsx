@@ -32,7 +32,7 @@ export const CurrentSlotStatus: FC<CurrentSlotStatusProps> = observer(
 
     return (
       <Text style={tw`text-[40px] text-center`}>
-        {nextTimeSlot.type === "on" ? "🌞" : "🌚"}
+        {nextTimeSlot.type !== "off" ? "🌞" : "🌚"}
       </Text>
     );
   }
