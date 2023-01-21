@@ -1,0 +1,3305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainScreen renders MainScreen for queue 0 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+    }
+  }
+>
+  <RCTScrollView
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    style={
+      Object {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 24,
+      }
+    }
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "fontSize": 30,
+              "lineHeight": 36,
+              "textAlign": "center",
+            }
+          }
+        >
+          I Черга
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 24,
+            "lineHeight": 32,
+            "textAlign": "center",
+          }
+        }
+      >
+        Субота, 21 Січня
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 30,
+            "lineHeight": 36,
+            "textAlign": "center",
+          }
+        }
+      >
+        21:25
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 40,
+            "textAlign": "center",
+          }
+        }
+      >
+        🌞
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flexBasis": "0%",
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 20,
+                "lineHeight": 28,
+              }
+            }
+          >
+            Нагадати за
+             
+            <Text
+              style={
+                Object {
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "lineHeight": 28,
+                }
+              }
+            >
+              00:15
+            </Text>
+          </Text>
+        </View>
+        <RCTSwitch
+          accessibilityRole="switch"
+          onChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 31,
+              "width": 51,
+            }
+          }
+          value={false}
+        />
+        <Modal
+          animationType="none"
+          hardwareAccelerated={false}
+          isVisible={false}
+          onHide={[Function]}
+          transparent={true}
+          visible={false}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <View>
+        <Text
+          style={
+            Object {
+              "fontSize": 20,
+              "lineHeight": 28,
+              "textAlign": "center",
+            }
+          }
+        >
+          Наступне вимкнення
+          <Text>
+             через
+3год. 34хв.
+          </Text>
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 32,
+            "paddingLeft": 32,
+            "paddingRight": 32,
+            "paddingTop": 32,
+          }
+        }
+      />
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Субота
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                0:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Неділя
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Понеділок
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Вівторок
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Середа
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                0:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Четвер
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            П'ятниця
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</RNCSafeAreaView>
+`;
+
+exports[`MainScreen renders MainScreen for queue 1 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+    }
+  }
+>
+  <RCTScrollView
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    style={
+      Object {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 24,
+      }
+    }
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "fontSize": 30,
+              "lineHeight": 36,
+              "textAlign": "center",
+            }
+          }
+        >
+          II Черга
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 24,
+            "lineHeight": 32,
+            "textAlign": "center",
+          }
+        }
+      >
+        Субота, 21 Січня
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 30,
+            "lineHeight": 36,
+            "textAlign": "center",
+          }
+        }
+      >
+        21:25
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 40,
+            "textAlign": "center",
+          }
+        }
+      >
+        🌞
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flexBasis": "0%",
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 20,
+                "lineHeight": 28,
+              }
+            }
+          >
+            Нагадати за
+             
+            <Text
+              style={
+                Object {
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "lineHeight": 28,
+                }
+              }
+            >
+              00:15
+            </Text>
+          </Text>
+        </View>
+        <RCTSwitch
+          accessibilityRole="switch"
+          onChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 31,
+              "width": 51,
+            }
+          }
+          value={false}
+        />
+        <Modal
+          animationType="none"
+          hardwareAccelerated={false}
+          isVisible={false}
+          onHide={[Function]}
+          transparent={true}
+          visible={false}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <View>
+        <Text
+          style={
+            Object {
+              "fontSize": 20,
+              "lineHeight": 28,
+              "textAlign": "center",
+            }
+          }
+        >
+          Наступне вимкнення
+          <Text>
+             через
+11год. 34хв.
+          </Text>
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 32,
+            "paddingLeft": 32,
+            "paddingRight": 32,
+            "paddingTop": 32,
+          }
+        }
+      />
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Субота
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Неділя
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Понеділок
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                0:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Вівторок
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                0:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Середа
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Четвер
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            П'ятниця
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                0:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</RNCSafeAreaView>
+`;
+
+exports[`MainScreen renders MainScreen for queue 2 1`] = `
+<RNCSafeAreaView
+  edges={
+    Array [
+      "bottom",
+      "left",
+      "right",
+      "top",
+    ]
+  }
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+    }
+  }
+>
+  <RCTScrollView
+    refreshControl={
+      <RefreshControlMock
+        onRefresh={[Function]}
+        refreshing={false}
+      />
+    }
+    style={
+      Object {
+        "flexBasis": "0%",
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 24,
+      }
+    }
+  >
+    <RCTRefreshControl />
+    <View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "fontSize": 30,
+              "lineHeight": 36,
+              "textAlign": "center",
+            }
+          }
+        >
+          III Черга
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 24,
+            "lineHeight": 32,
+            "textAlign": "center",
+          }
+        }
+      >
+        Субота, 21 Січня
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 4,
+            "paddingLeft": 4,
+            "paddingRight": 4,
+            "paddingTop": 4,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 30,
+            "lineHeight": 36,
+            "textAlign": "center",
+          }
+        }
+      >
+        21:25
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 40,
+            "textAlign": "center",
+          }
+        }
+      >
+        🌚
+      </Text>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flexBasis": "0%",
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "flexShrink": 1,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "fontSize": 20,
+                "lineHeight": 28,
+              }
+            }
+          >
+            Нагадати за
+             
+            <Text
+              style={
+                Object {
+                  "fontSize": 20,
+                  "fontWeight": "bold",
+                  "lineHeight": 28,
+                }
+              }
+            >
+              00:15
+            </Text>
+          </Text>
+        </View>
+        <RCTSwitch
+          accessibilityRole="switch"
+          onChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 31,
+              "width": 51,
+            }
+          }
+          value={false}
+        />
+        <Modal
+          animationType="none"
+          hardwareAccelerated={false}
+          isVisible={false}
+          onHide={[Function]}
+          transparent={true}
+          visible={false}
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+          }
+        }
+      />
+      <View>
+        <Text
+          style={
+            Object {
+              "fontSize": 20,
+              "lineHeight": 28,
+              "textAlign": "center",
+            }
+          }
+        >
+          Наступне включення
+          <Text>
+             через
+2год. 34хв.
+          </Text>
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "paddingBottom": 32,
+            "paddingLeft": 32,
+            "paddingRight": 32,
+            "paddingTop": 32,
+          }
+        }
+      />
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Субота
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Неділя
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                0:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Понеділок
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Вівторок
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Середа
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            Четвер
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                0:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View>
+          <Text
+            style={
+              Object {
+                "fontSize": 24,
+                "lineHeight": 32,
+                "textAlign": "center",
+              }
+            }
+          >
+            П'ятниця
+          </Text>
+          <View
+            style={
+              Object {
+                "paddingBottom": 4,
+              }
+            }
+          />
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 4,
+                  "paddingTop": 4,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                🌚
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "paddingBottom": 16,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 16,
+            }
+          }
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</RNCSafeAreaView>
+`;

@@ -2,7 +2,7 @@ module.exports = {
   // collectCoverageFrom: ["**/src/**/*.ts", "**/src/**/*.tsx"],
   preset: "jest-expo",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-  // modulePathIgnorePatterns: ["./__tests__/utils"],
+  modulePathIgnorePatterns: ["./__tests__/utils"],
   setupFiles: ["./__mocks__/imports.ts"],
   // setupFilesAfterEnv: [
   //   "@testing-library/jest-native/extend-expect",
