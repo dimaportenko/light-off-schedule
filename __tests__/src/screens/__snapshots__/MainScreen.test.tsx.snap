@@ -131,6 +131,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
             "textAlign": "center",
           }
         }
+        testID="current-slot-status-emoji"
       >
         🌞
       </Text>
@@ -1220,8 +1221,9 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
             "textAlign": "center",
           }
         }
+        testID="current-slot-status-emoji"
       >
-        🌞
+        🌗
       </Text>
       <View
         style={
@@ -2346,6 +2348,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
             "textAlign": "center",
           }
         }
+        testID="current-slot-status-emoji"
       >
         🌚
       </Text>

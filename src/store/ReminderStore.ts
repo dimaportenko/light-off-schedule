@@ -1,5 +1,5 @@
 import { autorun, makeAutoObservable } from "mobx";
-import { makePersistable } from "mobx-persist-store";
+import { makePersistable, stopPersisting } from "mobx-persist-store";
 import * as Notifications from "expo-notifications";
 
 import { RootStore } from "./RootStore";
@@ -36,4 +36,8 @@ export class ReminderStore {
   setReminderTime = (time: string) => {
     this.reminderTime = time;
   };
+
+  stopStore() {
+    stopPersisting(this);
+  }
 }
