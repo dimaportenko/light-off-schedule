@@ -1,11 +1,24 @@
 // jest test for MainScreen.tsx
 
 import React from "react";
+import tk from "timekeeper";
 import { render } from "../../utils/test-utils";
 import { MainScreen } from "../../../src/screens/MainScreen";
 import { root } from "../../../src/store";
 
 describe("MainScreen", () => {
+  const startTimestamp = 1487076708000;
+
+  beforeAll(() => {
+    const time = new Date(startTimestamp);
+    tk.freeze(time);
+  });
+
+  afterAll(() => {
+    // Unlock Time
+    tk.reset();
+  });
+
   // queue index 0
   test("renders MainScreen for queue 0", () => {
     root.queue.setSelectedQueueIndex(0);

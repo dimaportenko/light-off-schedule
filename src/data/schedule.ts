@@ -1,4 +1,4 @@
-type TimeSlotType = "on" | "off" | "maybe";
+export type TimeSlotType = "on" | "off" | "maybe";
 
 // dayjs format HH:mm:ss
 // const dayjs_object = dayjs("09:00:00", "HH:mm:ss");

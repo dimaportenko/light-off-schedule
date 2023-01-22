@@ -9,12 +9,6 @@ dayjs.extend(relativeTime);
 // add custom parse format plugin
 import customParseFormat from "dayjs/plugin/customParseFormat";
 dayjs.extend(customParseFormat);
-
-import tk from "timekeeper";
-const startTimestamp = 1487076708000;
-const time = new Date(startTimestamp);
-tk.freeze(time);
-
 // ---- Date config End ----
 
 const AllTheProviders = ({ children }: { children: any }) => {
