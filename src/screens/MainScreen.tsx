@@ -37,6 +37,10 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
     queuePickerRef.current?.open();
   };
 
+  const onRefresh = () => {
+    queue.fetchSchedule();
+  };
+
   return (
     <SafeAreaView style={tw`flex-1 bg-white`}>
       <ScrollView
@@ -44,7 +48,7 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
         refreshControl={
           <RefreshControl
             refreshing={queue.fetchScheduleStatus === "pending"}
-            onRefresh={queue.fetchSchedule}
+            onRefresh={onRefresh}
           />
         }
       >

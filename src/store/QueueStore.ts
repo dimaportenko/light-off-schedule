@@ -26,10 +26,12 @@ export class QueueStore {
   };
 
   fetchSchedule = async () => {
-    this.fetchScheduleStatus = "pending";
+    runInAction(() => {
+      this.fetchScheduleStatus = "pending";
+    });
     try {
       const response = await fetch(
-        "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v1/schedule.json"
+        "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v2/schedule.json"
       );
       const data = await response.json();
       console.log("fetchSchedule", data);
@@ -39,7 +41,6 @@ export class QueueStore {
         this.fetchScheduleStatus = "done";
       });
     } catch (error) {
-      console.log(error);
       runInAction(() => {
         this.fetchScheduleStatus = "error";
       });
