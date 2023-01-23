@@ -20,6 +20,8 @@ const getSlotTypeEmoji = (type: TimeSlotType) => {
       return "🌚";
     case "maybe":
       return "🌗";
+    default:
+      return "🌞";
   }
 };
 
