@@ -6,7 +6,10 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import {
+  SafeAreaView,
+  useSafeAreaInsets,
+} from "react-native-safe-area-context";
 import { observer } from "mobx-react-lite";
 
 import { CurrentSlotStatus } from "../components/main/CurrentSlotStatus";
@@ -28,6 +31,7 @@ import { AddRiminder } from "../components/reminder/AddReminder";
 type MainScreenProps = {};
 
 export const MainScreen: FC<MainScreenProps> = observer(() => {
+  const { top } = useSafeAreaInsets();
   const queuePickerRef = useRef<QueuePickerRefType>(null);
   const { queue } = useStore();
   const [showPicker, setShowPicker] = React.useState(false);
@@ -42,9 +46,10 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
   };
 
   return (
-    <SafeAreaView style={tw`flex-1 bg-white`}>
+    <View style={tw`flex-1 bg-white`}>
       <ScrollView
         style={tw`flex-1 p-6`}
+        contentContainerStyle={{ paddingTop: top }}
         refreshControl={
           <RefreshControl
             refreshing={queue.fetchScheduleStatus === "pending"}
@@ -73,7 +78,7 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
         <View style={tw`p-4`} />
         <NextTimeSlotCount queueIndex={queue.selectedQueueIndex} />
 
-        <View style={tw`p-8`} />
+        <View style={tw`p-4`} />
         {
           // map over the next 7 days
           [0, 1, 2, 3, 4, 5, 6].map((_, index) => {
@@ -97,6 +102,6 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
         setShowPicker={setShowPicker}
         ref={queuePickerRef}
       />
-    </SafeAreaView>
+    </View>
   );
 });

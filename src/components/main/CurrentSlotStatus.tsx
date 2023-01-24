@@ -6,23 +6,10 @@ import { getCurrentWeekdayIndex } from "../../utils/date";
 import { observer } from "mobx-react-lite";
 import { useStore } from "../../store";
 import { TEST_IDS } from "../../tests/ids";
-import { TimeSlotType } from "../../data/schedule";
+import { getSlotTypeEmoji } from "../../utils/timeSlot";
 
 type CurrentSlotStatusProps = {
   queueIndex: number;
-};
-
-const getSlotTypeEmoji = (type: TimeSlotType) => {
-  switch (type) {
-    case "on":
-      return "🌞";
-    case "off":
-      return "🌚";
-    case "maybe":
-      return "🌗";
-    default:
-      return "🌞";
-  }
 };
 
 export const CurrentSlotStatus: FC<CurrentSlotStatusProps> = observer(

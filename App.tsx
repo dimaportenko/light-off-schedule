@@ -14,6 +14,16 @@ import {
 import { root, StoreProvider } from "./src/store";
 
 export default function App() {
+  return (
+    <SafeAreaProvider>
+      <StoreProvider value={root}>
+        <AppContainer />
+      </StoreProvider>
+    </SafeAreaProvider>
+  );
+}
+
+export const AppContainer = () => {
   useForegroundSubscription();
 
   useForegroundListener(() => {
@@ -21,13 +31,9 @@ export default function App() {
   });
 
   return (
-    <SafeAreaProvider>
-      <StoreProvider value={root}>
-        <View style={tw`flex-1`}>
-          <MainScreen />
-          <StatusBar style="auto" />
-        </View>
-      </StoreProvider>
-    </SafeAreaProvider>
+    <View style={tw`flex-1`}>
+      <MainScreen />
+      <StatusBar style="auto" />
+    </View>
   );
-}
+};

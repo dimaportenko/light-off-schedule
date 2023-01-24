@@ -14,27 +14,29 @@ type TodayTimeSlotsProps = {
 export const TodayTimeSlots: FC<TodayTimeSlotsProps> = observer(
   ({ queueIndex, weekdayIndex }) => {
     const { queue } = useStore();
-    const queueSlots = queue.schedule[queueIndex][weekdayIndex];
+    const queueSlots = queue.selectedQueueSchedule[weekdayIndex];
 
     let lastSlotEndTime: string | undefined;
     const lastTimeSlot = queueSlots[queueSlots.length - 1];
-    if (lastTimeSlot.type === "off") {
+
+    if (lastTimeSlot.type !== "on") {
       const tomorrowIndex = ((weekdayIndex + 1) % 7) as WeekdDayIndexType;
       const firstTomorrowSlot = queue.schedule[queueIndex][tomorrowIndex][0];
-      if (firstTomorrowSlot.type === "off") {
+      if (firstTomorrowSlot.type === lastTimeSlot.type) {
         lastSlotEndTime = firstTomorrowSlot.end;
       }
     }
 
     return (
       <View>
-        <Text style={tw`text-2xl text-center`}>
+        <Text style={tw`text-2xl text-center pb-2`}>
           {getWeekdayTitle(weekdayIndex)}
         </Text>
         <View style={tw`pb-1`} />
         <View>
           {queueSlots
-            .filter((slot) => slot.type === "off")
+            .slice(1, queueSlots.length)
+            .filter((slot) => slot.type !== "on")
             .map((slot, index, slots) => {
               return (
                 <TimeSlotItem
