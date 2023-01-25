@@ -23,4 +23,4 @@
 ## Bugs
 
 - [ ] android time picker
-- [ ] persist stores after app update
+- [x] persist stores after app update

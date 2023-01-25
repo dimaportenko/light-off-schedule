@@ -4,8 +4,8 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 // All properties are optional
 configurePersistable({
   storage: AsyncStorage,
-  // expireIn: 86400000,
   // removeOnExpiration: true,
+  // expireIn: 86400000,
   // stringify: false,
   // debugMode: true,
 });

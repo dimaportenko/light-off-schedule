@@ -2,27 +2,24 @@ import { autorun, makeAutoObservable } from "mobx";
 import { makePersistable, stopPersisting } from "mobx-persist-store";
 import * as Notifications from "expo-notifications";
 
-import { RootStore } from "./RootStore";
 import { scheduleLocalWeeklyNotifications } from "./reminder";
+import { IReminderStore, IRootStore } from "./IRootStore";
 
-export class ReminderStore {
+export class ReminderStore implements IReminderStore {
   reminderEnabled = false;
   reminderTime = "00:15";
 
-  constructor(root: RootStore) {
+  constructor(root: IRootStore) {
     makeAutoObservable(this);
 
     makePersistable(this, {
-      name: "QueueStore",
+      name: "ReminderStore",
       properties: ["reminderEnabled", "reminderTime"],
     });
 
     autorun(() => {
       if (this.reminderEnabled) {
-        scheduleLocalWeeklyNotifications(
-          root.queue.selectedQueueSchedule,
-          this.reminderTime
-        );
+        scheduleLocalWeeklyNotifications(this.reminderTime, root);
       } else {
         Notifications.cancelAllScheduledNotificationsAsync();
       }

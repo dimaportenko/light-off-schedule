@@ -2,8 +2,9 @@ import { makeAutoObservable, runInAction } from "mobx";
 import { makePersistable, stopPersisting } from "mobx-persist-store";
 
 import { schedule } from "../data/schedule";
+import { IQueueStore } from "./IRootStore";
 
-export class QueueStore {
+export class QueueStore implements IQueueStore {
   schedule = schedule;
   selectedQueueIndex = 2;
   fetchScheduleStatus = "idle";
