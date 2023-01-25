@@ -6,10 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import {
-  SafeAreaView,
-  useSafeAreaInsets,
-} from "react-native-safe-area-context";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { observer } from "mobx-react-lite";
 
 import { CurrentSlotStatus } from "../components/main/CurrentSlotStatus";
@@ -31,7 +28,7 @@ import { AddRiminder } from "../components/reminder/AddReminder";
 type MainScreenProps = {};
 
 export const MainScreen: FC<MainScreenProps> = observer(() => {
-  const { top } = useSafeAreaInsets();
+  const { top, bottom } = useSafeAreaInsets();
   const queuePickerRef = useRef<QueuePickerRefType>(null);
   const { queue } = useStore();
   const [showPicker, setShowPicker] = React.useState(false);
@@ -49,7 +46,7 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
     <View style={tw`flex-1 bg-white`}>
       <ScrollView
         style={tw`flex-1 p-6`}
-        contentContainerStyle={{ paddingTop: top }}
+        contentContainerStyle={{ paddingTop: top, paddingBottom: bottom }}
         refreshControl={
           <RefreshControl
             refreshing={queue.fetchScheduleStatus === "pending"}

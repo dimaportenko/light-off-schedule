@@ -13,7 +13,7 @@ export class ReminderStore {
     makeAutoObservable(this);
 
     makePersistable(this, {
-      name: "QueueStore",
+      name: "ReminderStore",
       properties: ["reminderEnabled", "reminderTime"],
     });
 

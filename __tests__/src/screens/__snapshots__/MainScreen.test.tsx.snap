@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MainScreen renders MainScreen for queue 0 1`] = `
-<RNCSafeAreaView
-  edges={
-    Array [
-      "bottom",
-      "left",
-      "right",
-      "top",
-    ]
-  }
+<View
   style={
     Object {
       "backgroundColor": "#fff",
@@ -20,6 +12,12 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
   }
 >
   <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 0,
+        "paddingTop": 0,
+      }
+    }
     refreshControl={
       <RefreshControlMock
         onRefresh={[Function]}
@@ -133,7 +131,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
         }
         testID="current-slot-status-emoji"
       >
-        🌞
+        🌕
       </Text>
       <View
         style={
@@ -248,10 +246,10 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
       <View
         style={
           Object {
-            "paddingBottom": 32,
-            "paddingLeft": 32,
-            "paddingRight": 32,
-            "paddingTop": 32,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
           }
         }
       />
@@ -262,6 +260,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -280,17 +279,65 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -307,27 +354,76 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -344,10 +440,11 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -370,6 +467,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -388,26 +486,31 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
                 }
               >
-                0:00
+                1:00
                  -
                  
-                1:00
+                5:00
               </Text>
               <Text
                 style={
@@ -415,27 +518,33 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌗
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -452,27 +561,76 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -489,10 +647,11 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -515,6 +674,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -533,17 +693,22 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -560,27 +725,76 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -597,10 +811,54 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
               </Text>
             </View>
           </View>
@@ -623,6 +881,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -641,17 +900,65 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -668,27 +975,76 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -705,10 +1061,11 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -731,6 +1088,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -749,26 +1107,31 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
                 }
               >
-                0:00
+                1:00
                  -
                  
-                1:00
+                5:00
               </Text>
               <Text
                 style={
@@ -776,27 +1139,33 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌗
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -813,27 +1182,76 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -850,10 +1268,11 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -876,6 +1295,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -894,17 +1314,22 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -921,27 +1346,76 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -958,10 +1432,54 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
               </Text>
             </View>
           </View>
@@ -984,6 +1502,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -1002,17 +1521,22 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1029,27 +1553,76 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1066,10 +1639,54 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
               </Text>
             </View>
           </View>
@@ -1087,19 +1704,11 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
       </View>
     </View>
   </RCTScrollView>
-</RNCSafeAreaView>
+</View>
 `;
 
 exports[`MainScreen renders MainScreen for queue 1 1`] = `
-<RNCSafeAreaView
-  edges={
-    Array [
-      "bottom",
-      "left",
-      "right",
-      "top",
-    ]
-  }
+<View
   style={
     Object {
       "backgroundColor": "#fff",
@@ -1110,6 +1719,12 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
   }
 >
   <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 0,
+        "paddingTop": 0,
+      }
+    }
     refreshControl={
       <RefreshControlMock
         onRefresh={[Function]}
@@ -1338,10 +1953,10 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
       <View
         style={
           Object {
-            "paddingBottom": 32,
-            "paddingLeft": 32,
-            "paddingRight": 32,
-            "paddingTop": 32,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
           }
         }
       />
@@ -1352,6 +1967,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -1370,26 +1986,31 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
                 }
               >
-                0:00
+                1:00
                  -
                  
-                1:00
+                5:00
               </Text>
               <Text
                 style={
@@ -1397,27 +2018,33 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌗
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1434,27 +2061,76 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1471,10 +2147,11 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -1497,6 +2174,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -1515,17 +2193,22 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1542,27 +2225,76 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1579,10 +2311,54 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
               </Text>
             </View>
           </View>
@@ -1605,6 +2381,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -1623,17 +2400,65 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1650,27 +2475,76 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1687,10 +2561,11 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -1713,6 +2588,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -1731,26 +2607,31 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
                 }
               >
-                0:00
+                1:00
                  -
                  
-                1:00
+                5:00
               </Text>
               <Text
                 style={
@@ -1758,27 +2639,33 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌗
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1795,27 +2682,76 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1832,10 +2768,11 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -1858,6 +2795,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -1876,17 +2814,22 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1903,27 +2846,76 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -1940,10 +2932,54 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
               </Text>
             </View>
           </View>
@@ -1966,6 +3002,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -1984,17 +3021,65 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2011,27 +3096,76 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2048,10 +3182,11 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -2074,6 +3209,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -2092,26 +3228,31 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
                 }
               >
-                0:00
+                5:00
                  -
                  
-                1:00
+                9:00
               </Text>
               <Text
                 style={
@@ -2119,27 +3260,33 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌗
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2156,27 +3303,76 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2193,10 +3389,11 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -2214,19 +3411,11 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
       </View>
     </View>
   </RCTScrollView>
-</RNCSafeAreaView>
+</View>
 `;
 
 exports[`MainScreen renders MainScreen for queue 2 1`] = `
-<RNCSafeAreaView
-  edges={
-    Array [
-      "bottom",
-      "left",
-      "right",
-      "top",
-    ]
-  }
+<View
   style={
     Object {
       "backgroundColor": "#fff",
@@ -2237,6 +3426,12 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
   }
 >
   <RCTScrollView
+    contentContainerStyle={
+      Object {
+        "paddingBottom": 0,
+        "paddingTop": 0,
+      }
+    }
     refreshControl={
       <RefreshControlMock
         onRefresh={[Function]}
@@ -2350,7 +3545,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
         }
         testID="current-slot-status-emoji"
       >
-        🌚
+        🌑
       </Text>
       <View
         style={
@@ -2465,10 +3660,10 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
       <View
         style={
           Object {
-            "paddingBottom": 32,
-            "paddingLeft": 32,
-            "paddingRight": 32,
-            "paddingTop": 32,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
           }
         }
       />
@@ -2479,6 +3674,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -2497,17 +3693,22 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2524,27 +3725,76 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2561,10 +3811,54 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
               </Text>
             </View>
           </View>
@@ -2587,6 +3881,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -2605,17 +3900,65 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2632,27 +3975,76 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2669,10 +4061,11 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -2695,6 +4088,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -2713,26 +4107,31 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
                 }
               >
-                0:00
+                1:00
                  -
                  
-                1:00
+                5:00
               </Text>
               <Text
                 style={
@@ -2740,27 +4139,33 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌗
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2777,27 +4182,76 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2814,10 +4268,11 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -2840,6 +4295,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -2858,17 +4314,22 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2885,27 +4346,76 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                9:00
+                 -
+                 
+                13:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2922,10 +4432,54 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                21:00
+                 -
+                 
+                1:00
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
               </Text>
             </View>
           </View>
@@ -2948,6 +4502,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -2966,17 +4521,65 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                5:00
+                 -
+                 
+                9:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -2993,27 +4596,76 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                17:00
+                 -
+                 
+                21:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -3030,10 +4682,11 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -3056,6 +4709,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -3074,26 +4728,31 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
                 }
               >
-                0:00
+                1:00
                  -
                  
-                1:00
+                5:00
               </Text>
               <Text
                 style={
@@ -3101,27 +4760,33 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌗
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#000",
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -3138,27 +4803,76 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -3175,10 +4889,11 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -3201,6 +4916,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               Object {
                 "fontSize": 24,
                 "lineHeight": 32,
+                "paddingBottom": 8,
                 "textAlign": "center",
               }
             }
@@ -3219,17 +4935,65 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                1:00
+                 -
+                 
+                5:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -3246,27 +5010,76 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
             <View
               style={
                 Object {
                   "alignItems": "center",
+                  "backgroundColor": "#F2F2F2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
                   "flexDirection": "row",
                   "justifyContent": "space-between",
-                  "paddingBottom": 4,
-                  "paddingTop": 4,
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
                 }
               }
             >
               <Text
                 style={
                   Object {
+                    "color": "#707786",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                  }
+                }
+              >
+                13:00
+                 -
+                 
+                17:00
+              </Text>
+              <Text
+                style={
+                  Object {
                     "color": "#000",
+                    "fontSize": 20,
+                    "lineHeight": 28,
+                    "opacity": 0.9,
+                  }
+                }
+              >
+                🌗
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fee2e2",
+                  "borderBottomWidth": 1,
+                  "borderColor": "#d1d5db",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "paddingBottom": 8,
+                  "paddingLeft": 12,
+                  "paddingRight": 12,
+                  "paddingTop": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#707786",
                     "fontSize": 20,
                     "lineHeight": 28,
                   }
@@ -3283,10 +5096,11 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
                     "color": "#000",
                     "fontSize": 20,
                     "lineHeight": 28,
+                    "opacity": 0.9,
                   }
                 }
               >
-                🌚
+                🌑
               </Text>
             </View>
           </View>
@@ -3304,5 +5118,5 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
       </View>
     </View>
   </RCTScrollView>
-</RNCSafeAreaView>
+</View>
 `;
