@@ -1,7 +1,8 @@
+import { IRootStore } from "./IRootStore";
 import { QueueStore } from "./QueueStore";
 import { ReminderStore } from "./ReminderStore";
 
-export class RootStore {
+export class RootStore implements IRootStore {
   queue: QueueStore;
   reminder: ReminderStore;
 

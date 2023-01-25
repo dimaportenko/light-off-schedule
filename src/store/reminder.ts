@@ -1,10 +1,10 @@
 import * as Notifications from "expo-notifications";
 import { Alert, Platform } from "react-native";
-import { root } from ".";
 
 import { QueueSchedule } from "../data/schedule";
 import { translate } from "../i18n";
 import { WeekdDayIndexType } from "../utils/date";
+import { IRootStore } from "./IRootStore";
 
 export const prepareNotifiationsInput = (
   queueSchedule: QueueSchedule,
@@ -82,9 +82,10 @@ export const requestNotificationPermissions = async () => {
 };
 
 export const scheduleLocalWeeklyNotifications = async (
-  queueSchedule: QueueSchedule,
-  time: string
+  time: string,
+  root: IRootStore
 ) => {
+  const queueSchedule = root.queue.selectedQueueSchedule;
   // request permissions
   const status = await requestNotificationPermissions();
   if (status !== "granted") {
