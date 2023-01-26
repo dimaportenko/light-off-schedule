@@ -24,3 +24,4 @@
 
 - [ ] android time picker
 - [x] persist stores after app update
+- [x] next turn off time is incorrect
