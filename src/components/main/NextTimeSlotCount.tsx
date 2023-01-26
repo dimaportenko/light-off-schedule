@@ -49,12 +49,17 @@ export const NextTimeSlotCount: FC<NextTimeSlotCountProps> = observer(
 
     let timeToNextTimeSlot: string;
     if (!nextTimeSlot) {
-      const lastTimeSlot = queueSlots[queueSlots.length - 1];
       const tomorrowIndex = ((weekdayIndex + 1) % 7) as WeekdDayIndexType;
       const tomorrowSlots = queue.schedule[queueIndex][tomorrowIndex];
-      nextTimeSlot = tomorrowSlots.find((slot) => {
-        return slot.type !== lastTimeSlot.type;
-      });
+      nextTimeSlot = tomorrowSlots
+        .slice(1, tomorrowSlots.length)
+        .find((slot) => {
+          return (
+            (currentTimeSlot?.type === "off" && slot.type !== "off") ||
+            (currentTimeSlot?.type !== "off" && slot.type === "off")
+          );
+        });
+      console.warn("nextTimeSlot", nextTimeSlot);
       if (!nextTimeSlot) {
         return null;
       }
@@ -70,7 +75,7 @@ export const NextTimeSlotCount: FC<NextTimeSlotCountProps> = observer(
     return (
       <View>
         <Text style={tw`text-xl text-center`}>
-          {nextTimeSlot.type === "on"
+          {nextTimeSlot.type !== "off"
             ? translate("mainScreen.nextTurnOn")
             : translate("mainScreen.nextTurnOff")}
           <Text>{` ${timeToNextTimeSlot}`}</Text>
