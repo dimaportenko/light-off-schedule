@@ -15,13 +15,24 @@
 - [x] refactor store (move reminder to another store)
 - [x] fetch data from the git repo
 - [x] fix refresh next turn off feature 
-- [ ] show all slots 
+- [x] show all slots 
 - [ ] settings screen
 - [ ] slot type switching settings
+- [ ] document publish process with docusaurus 
 
 
 ## Bugs
 
-- [ ] android time picker
+- [ ] replace android time picker
+- [ ] fix android queue picker issue
 - [x] persist stores after app update
 - [x] next turn off time is incorrect
+
+
+## Roadmap
+
+- [ ] publish to store
+- [ ] fix android pickers issues
+- [ ] add navigation with settings screen
+- [ ] slots visibility settings
+- [ ] langauge settings
