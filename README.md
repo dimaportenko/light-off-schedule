@@ -1,1 +1,3 @@
-# light-off-schedule
+# Lighth Off Schedule App
+
+Графік відключення світла у місті Львів
