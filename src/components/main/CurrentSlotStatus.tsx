@@ -5,6 +5,8 @@ import tw from "../../lib/tailwind";
 import { getCurrentWeekdayIndex } from "../../utils/date";
 import { observer } from "mobx-react-lite";
 import { useStore } from "../../store";
+import { TEST_IDS } from "../../tests/ids";
+import { getSlotTypeEmoji } from "../../utils/timeSlot";
 
 type CurrentSlotStatusProps = {
   queueIndex: number;
@@ -31,8 +33,11 @@ export const CurrentSlotStatus: FC<CurrentSlotStatusProps> = observer(
     }
 
     return (
-      <Text style={tw`text-[40px] text-center`}>
-        {nextTimeSlot.type === "on" ? "🌞" : "🌚"}
+      <Text
+        style={tw`text-[40px] text-center`}
+        testID={TEST_IDS.currentSlotStatus.statusEmoji}
+      >
+        {getSlotTypeEmoji(nextTimeSlot.type)}
       </Text>
     );
   }

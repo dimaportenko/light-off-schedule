@@ -1,4 +1,4 @@
-# TODO
+## TODO
 
 - [x] today date
 - [x] render today timeslots
@@ -12,6 +12,27 @@
 - [x] move data to the store 
 - [x] setup notification before next off slot start
 - [x] add tests
-- [ ] refactor store (move reminder to another store)
-- [ ] fetch data from the git repo
-- [ ] fix refresh next turn off feature 
+- [x] refactor store (move reminder to another store)
+- [x] fetch data from the git repo
+- [x] fix refresh next turn off feature 
+- [x] show all slots 
+- [ ] settings screen
+- [ ] slot type switching settings
+- [ ] document publish process with docusaurus 
+
+
+## Bugs
+
+- [ ] replace android time picker
+- [ ] fix android queue picker issue
+- [x] persist stores after app update
+- [x] next turn off time is incorrect
+
+
+## Roadmap
+
+- [ ] publish to store
+- [ ] fix android pickers issues
+- [ ] add navigation with settings screen
+- [ ] slots visibility settings
+- [ ] langauge settings

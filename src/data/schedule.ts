@@ -1,4 +1,4 @@
-type TimeSlotType = "on" | "off" | "maybe";
+export type TimeSlotType = "on" | "off" | "maybe";
 
 // dayjs format HH:mm:ss
 // const dayjs_object = dayjs("09:00:00", "HH:mm:ss");
@@ -29,56 +29,73 @@ export const schedule: Schedule = [
   {
     // Monday
     1: [
+      { start: "00:00", end: "01:00", type: "maybe" },
       { start: "01:00", end: "05:00", type: "off" },
-      { start: "05:00", end: "13:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "maybe" },
       { start: "13:00", end: "17:00", type: "off" },
-      { start: "17:00", end: "24:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "maybe" },
     ],
     // Tuesday
     2: [
-      { start: "00:00", end: "09:00", type: "on" },
+      { start: "00:00", end: "01:00", type: "maybe" },
+      { start: "01:00", end: "05:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "maybe" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "21:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "maybe" },
       { start: "21:00", end: "24:00", type: "off" },
     ],
     // Wednesday
     3: [
       { start: "00:00", end: "01:00", type: "off" },
-      { start: "01:00", end: "05:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "maybe" },
       { start: "05:00", end: "09:00", type: "off" },
-      { start: "09:00", end: "17:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "maybe" },
       { start: "17:00", end: "21:00", type: "off" },
       { start: "21:00", end: "24:00", type: "on" },
     ],
     // Thursday
     4: [
+      { start: "00:00", end: "01:00", type: "on" },
       { start: "01:00", end: "05:00", type: "off" },
-      { start: "05:00", end: "13:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "maybe" },
       { start: "13:00", end: "17:00", type: "off" },
-      { start: "17:00", end: "24:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "maybe" },
     ],
     // Friday
     5: [
-      { start: "00:00", end: "09:00", type: "on" },
+      { start: "00:00", end: "01:00", type: "maybe" },
+      { start: "01:00", end: "05:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "maybe" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "21:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "maybe" },
       { start: "21:00", end: "24:00", type: "off" },
     ],
     // Saturday
     6: [
       { start: "00:00", end: "01:00", type: "off" },
-      { start: "01:00", end: "05:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "maybe" },
       { start: "05:00", end: "09:00", type: "off" },
-      { start: "09:00", end: "17:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "maybe" },
       { start: "17:00", end: "21:00", type: "off" },
       { start: "21:00", end: "24:00", type: "on" },
     ],
     // Sunday
     0: [
+      { start: "00:00", end: "01:00", type: "on" },
       { start: "01:00", end: "05:00", type: "off" },
-      { start: "05:00", end: "13:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "maybe" },
       { start: "13:00", end: "17:00", type: "off" },
-      { start: "17:00", end: "24:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "maybe" },
     ],
   },
 
@@ -87,17 +104,20 @@ export const schedule: Schedule = [
     // Monday
     1: [
       { start: "00:00", end: "01:00", type: "off" },
-      { start: "01:00", end: "09:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "maybe" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "21:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "maybe" },
       { start: "21:00", end: "24:00", type: "off" },
     ],
     // Tuesday
     2: [
       { start: "00:00", end: "01:00", type: "off" },
-      { start: "01:00", end: "05:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "maybe" },
       { start: "05:00", end: "09:00", type: "off" },
-      { start: "09:00", end: "17:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "maybe" },
       { start: "17:00", end: "21:00", type: "off" },
       { start: "21:00", end: "24:00", type: "on" },
     ],
@@ -105,24 +125,29 @@ export const schedule: Schedule = [
     3: [
       { start: "00:00", end: "01:00", type: "on" },
       { start: "01:00", end: "05:00", type: "off" },
-      { start: "05:00", end: "13:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "maybe" },
       { start: "13:00", end: "17:00", type: "off" },
-      { start: "17:00", end: "24:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "maybe" },
     ],
     // Thursday
     4: [
+      { start: "00:00", end: "01:00", type: "maybe" },
       { start: "01:00", end: "05:00", type: "on" },
-      { start: "00:00", end: "09:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "maybe" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "21:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "maybe" },
       { start: "21:00", end: "24:00", type: "off" },
     ],
     // Friday
     5: [
       { start: "00:00", end: "01:00", type: "off" },
-      { start: "01:00", end: "05:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "maybe" },
       { start: "05:00", end: "09:00", type: "off" },
-      { start: "09:00", end: "17:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "maybe" },
       { start: "17:00", end: "21:00", type: "off" },
       { start: "21:00", end: "24:00", type: "on" },
     ],
@@ -130,15 +155,20 @@ export const schedule: Schedule = [
     6: [
       { start: "00:00", end: "01:00", type: "on" },
       { start: "01:00", end: "05:00", type: "off" },
-      { start: "05:00", end: "13:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "maybe" },
       { start: "13:00", end: "17:00", type: "off" },
-      { start: "17:00", end: "24:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "maybe" },
     ],
     // Sunday
     0: [
-      { start: "00:00", end: "09:00", type: "on" },
+      { start: "00:00", end: "01:00", type: "maybe" },
+      { start: "01:00", end: "05:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "maybe" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "21:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "maybe" },
       { start: "21:00", end: "24:00", type: "off" },
     ],
   },
@@ -147,9 +177,11 @@ export const schedule: Schedule = [
   {
     // Monday
     1: [
-      { start: "00:00", end: "05:00", type: "on" },
+      { start: "00:00", end: "01:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "maybe" },
       { start: "05:00", end: "09:00", type: "off" },
-      { start: "09:00", end: "17:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "maybe" },
       { start: "17:00", end: "21:00", type: "off" },
       { start: "21:00", end: "24:00", type: "on" },
     ],
@@ -157,23 +189,29 @@ export const schedule: Schedule = [
     2: [
       { start: "00:00", end: "01:00", type: "on" },
       { start: "01:00", end: "05:00", type: "off" },
-      { start: "05:00", end: "13:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "maybe" },
       { start: "13:00", end: "17:00", type: "off" },
-      { start: "17:00", end: "24:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "maybe" },
     ],
     // Wednesday
     3: [
-      { start: "00:00", end: "09:00", type: "on" },
+      { start: "00:00", end: "01:00", type: "maybe" },
+      { start: "01:00", end: "05:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "maybe" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "21:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "maybe" },
       { start: "21:00", end: "24:00", type: "off" },
     ],
     // Thursday
     4: [
       { start: "00:00", end: "01:00", type: "off" },
-      { start: "01:00", end: "05:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "maybe" },
       { start: "05:00", end: "09:00", type: "off" },
-      { start: "09:00", end: "17:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "maybe" },
       { start: "17:00", end: "21:00", type: "off" },
       { start: "21:00", end: "24:00", type: "on" },
     ],
@@ -181,23 +219,29 @@ export const schedule: Schedule = [
     5: [
       { start: "00:00", end: "01:00", type: "on" },
       { start: "01:00", end: "05:00", type: "off" },
-      { start: "05:00", end: "13:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "maybe" },
       { start: "13:00", end: "17:00", type: "off" },
-      { start: "17:00", end: "24:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "on" },
+      { start: "21:00", end: "24:00", type: "maybe" },
     ],
     // Saturday
     6: [
-      { start: "00:00", end: "09:00", type: "on" },
+      { start: "00:00", end: "01:00", type: "maybe" },
+      { start: "01:00", end: "05:00", type: "on" },
+      { start: "05:00", end: "09:00", type: "maybe" },
       { start: "09:00", end: "13:00", type: "off" },
-      { start: "13:00", end: "21:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "on" },
+      { start: "17:00", end: "21:00", type: "maybe" },
       { start: "21:00", end: "24:00", type: "off" },
     ],
     // Sunday
     0: [
       { start: "00:00", end: "01:00", type: "off" },
-      { start: "00:00", end: "05:00", type: "on" },
+      { start: "01:00", end: "05:00", type: "maybe" },
       { start: "05:00", end: "09:00", type: "off" },
-      { start: "09:00", end: "17:00", type: "on" },
+      { start: "09:00", end: "13:00", type: "on" },
+      { start: "13:00", end: "17:00", type: "maybe" },
       { start: "17:00", end: "21:00", type: "off" },
       { start: "21:00", end: "24:00", type: "on" },
     ],

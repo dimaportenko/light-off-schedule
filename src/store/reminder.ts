@@ -1,11 +1,10 @@
 import * as Notifications from "expo-notifications";
-import { requestPermissionsAsync } from "expo-notifications";
 import { Alert, Platform } from "react-native";
-import { root } from ".";
 
 import { QueueSchedule } from "../data/schedule";
 import { translate } from "../i18n";
 import { WeekdDayIndexType } from "../utils/date";
+import { IRootStore } from "./IRootStore";
 
 export const prepareNotifiationsInput = (
   queueSchedule: QueueSchedule,
@@ -30,7 +29,7 @@ export const prepareNotifiationsInput = (
       }
 
       // skip light on slots
-      if (timeSlot.type === "on") {
+      if (timeSlot.type !== "off") {
         return;
       }
 
@@ -78,21 +77,22 @@ export const requestNotificationPermissions = async () => {
     }
   }
 
-  const { status } = await Notifications.getPermissionsAsync();
+  const { status } = await Notifications.requestPermissionsAsync();
   return status;
 };
 
 export const scheduleLocalWeeklyNotifications = async (
-  queueSchedule: QueueSchedule,
-  time: string
+  time: string,
+  root: IRootStore
 ) => {
+  const queueSchedule = root.queue.selectedQueueSchedule;
   // request permissions
   const status = await requestNotificationPermissions();
   if (status !== "granted") {
     console.log("status", status);
     Alert.alert(translate("notifications.permissionDenied"));
 
-    root.queue.setReminderEnabled(false);
+    root.reminder.setReminderEnabled(false);
 
     return;
   }

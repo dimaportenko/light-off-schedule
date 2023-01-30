@@ -1,20 +1,9 @@
+import "./persistConfig";
 import { createContext, useContext } from "react";
-import { createQueueStore } from "./queueStore";
+import { RootStore } from "./RootStore";
 
-export type RootStore = {
-  queue: ReturnType<typeof createQueueStore>;
-};
+export const root = new RootStore();
 
-let createRootStore = (): RootStore => {
-  let store: any = {};
-
-  store.queue = createQueueStore();
-
-  return store;
-};
-
-export let root = createRootStore();
-
-export let StoreContext = createContext<RootStore>(root);
-export let StoreProvider = StoreContext.Provider;
-export let useStore = () => useContext(StoreContext);
+export const StoreContext = createContext<RootStore>(root);
+export const StoreProvider = StoreContext.Provider;
+export const useStore = () => useContext(StoreContext);

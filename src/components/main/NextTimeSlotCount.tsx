@@ -30,21 +30,36 @@ export const NextTimeSlotCount: FC<NextTimeSlotCountProps> = observer(
     const weekdayIndex = getCurrentWeekdayIndex();
     // get time slots for the current weekday
     const queueSlots = queue.schedule[queueIndex][weekdayIndex];
+
+    const currentTimeSlot = queueSlots.find(
+      (slot) =>
+        dayjs().isAfter(dayjs(slot.start, "HH:mm")) &&
+        dayjs().isBefore(dayjs(slot.end, "HH:mm"))
+    );
     // today dayjs object with start time
     // get the next time slot
     let nextTimeSlot = queueSlots.find((slot) => {
       const startTime = dayjs(slot.start, "HH:mm");
-      return startTime.isAfter(dayjs());
+      if (currentTimeSlot?.type === "off") {
+        return startTime.isAfter(dayjs());
+      } else {
+        return startTime.isAfter(dayjs()) && slot.type === "off";
+      }
     });
 
     let timeToNextTimeSlot: string;
     if (!nextTimeSlot) {
-      const lastTimeSlot = queueSlots[queueSlots.length - 1];
       const tomorrowIndex = ((weekdayIndex + 1) % 7) as WeekdDayIndexType;
       const tomorrowSlots = queue.schedule[queueIndex][tomorrowIndex];
-      nextTimeSlot = tomorrowSlots.find((slot) => {
-        return slot.type !== lastTimeSlot.type;
-      });
+      nextTimeSlot = tomorrowSlots
+        .slice(1, tomorrowSlots.length)
+        .find((slot) => {
+          return (
+            (currentTimeSlot?.type === "off" && slot.type !== "off") ||
+            (currentTimeSlot?.type !== "off" && slot.type === "off")
+          );
+        });
+      console.warn("nextTimeSlot", nextTimeSlot);
       if (!nextTimeSlot) {
         return null;
       }
@@ -60,7 +75,7 @@ export const NextTimeSlotCount: FC<NextTimeSlotCountProps> = observer(
     return (
       <View>
         <Text style={tw`text-xl text-center`}>
-          {nextTimeSlot.type === "on"
+          {nextTimeSlot.type !== "off"
             ? translate("mainScreen.nextTurnOn")
             : translate("mainScreen.nextTurnOff")}
           <Text>{` ${timeToNextTimeSlot}`}</Text>
