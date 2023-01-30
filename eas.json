@@ -8,7 +8,11 @@
       "autoIncrement": true,
       "channel": "base",
       "ios": {
+        "autoIncrement": "version",
         "resourceClass": "m1-medium"
+      },
+      "android": {
+        "autoIncrement": "version"
       }
     },
     "development": {
