@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start:normal": "npx expo start",
-    "start": "npx expo start --dev-client",
+    "start:dev": "npx expo start --dev-client",
+    "start": "npx expo start",
     "android": "npx expo run:android",
     "android:device": "npx expo run:android --device",
     "android:release:device": "npx expo run:android --variant Release --device",
@@ -24,7 +25,7 @@
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "~1.17.3",
-    "@react-native-community/datetimepicker": "6.5.2",
+    "@react-native-community/datetimepicker": "6.5.3",
     "@react-native-picker/picker": "2.4.8",
     "@types/jest": "^29.2.5",
     "dayjs": "^1.11.7",
@@ -51,6 +52,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@react-native-community/eslint-config": "^3.2.0",
+    "@testing-library/jest-native": "^5.4.1",
     "@testing-library/react-native": "^11.5.0",
     "@types/i18n-js": "3.8.2",
     "@types/react": "~18.0.14",

@@ -24,6 +24,9 @@ import {
   QueuePickerRefType,
 } from "../components/main/QueuePicker";
 import { AddRiminder } from "../components/reminder/AddReminder";
+import { TEST_IDS } from "../tests/ids";
+import { IconButton } from "../components/common/IconButton";
+import { SettingsIcon } from "../components/common/Icons";
 
 type MainScreenProps = {};
 
@@ -55,7 +58,10 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
         }
       >
         <TouchableOpacity onPress={open}>
-          <Text style={tw`text-3xl text-black text-center`}>
+          <Text
+            style={tw`text-3xl text-black text-center`}
+            testID={TEST_IDS.mainScreen.queueTitle}
+          >
             {romeNumberArray[queue.selectedQueueIndex] +
               " " +
               translate("mainScreen.queue")}
@@ -92,6 +98,13 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
             );
           })
         }
+
+        {/* <IconButton */}
+        {/*   icon={<SettingsIcon />} */}
+        {/*   onPress={() => {}} */}
+        {/*   style={tw`absolute top-${top + 6}px right-0`} */}
+        {/*   testID={TEST_IDS.mainScreen.settingsButton} */}
+        {/* /> */}
       </ScrollView>
 
       <QueuePicker

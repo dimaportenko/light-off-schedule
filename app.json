@@ -2,7 +2,7 @@
   "expo": {
     "name": "Розклад Відключень",
     "slug": "light-off-schedule",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,12 +15,13 @@
       "fallbackToCacheTimeout": 0,
       "url": "https://u.expo.dev/7027993e-c322-41ae-8794-d20e4296b806"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.plabpreview.light-off-schedule",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -28,10 +29,7 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.plabpreview.lightoffschedule",
-      "permissions": [
-        "RECEIVE_BOOT_COMPLETED",
-        "SCHEDULE_EXACT_ALARM"
-      ],
+      "permissions": ["RECEIVE_BOOT_COMPLETED", "SCHEDULE_EXACT_ALARM"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
