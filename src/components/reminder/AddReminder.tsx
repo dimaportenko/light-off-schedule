@@ -42,6 +42,7 @@ export const AddRiminder = observer(() => {
         // convert string HH:mm to Date with dayjs
         date={dayjs(reminder.reminderTime, "HH:mm").toDate()}
         is24Hour
+        display="spinner"
       />
     </View>
   );
