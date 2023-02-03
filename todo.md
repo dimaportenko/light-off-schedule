@@ -24,14 +24,14 @@
 ## Bugs
 
 - [ ] replace android time picker
-- [ ] fix android queue picker issue
+- [x] fix android queue picker issue
 - [x] persist stores after app update
 - [x] next turn off time is incorrect
 
 
 ## Roadmap
 
-- [ ] publish to store
+- [x] publish to store
 - [ ] fix android pickers issues
 - [ ] add navigation with settings screen
 - [ ] slots visibility settings
