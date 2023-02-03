@@ -59,7 +59,7 @@ export const NextTimeSlotCount: FC<NextTimeSlotCountProps> = observer(
             (currentTimeSlot?.type !== "off" && slot.type === "off")
           );
         });
-      console.warn("nextTimeSlot", nextTimeSlot);
+
       if (!nextTimeSlot) {
         return null;
       }

@@ -64,6 +64,7 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
               "textAlign": "center",
             }
           }
+          testID="main-screen-queue-title"
         >
           I Черга
         </Text>
@@ -1702,6 +1703,47 @@ exports[`MainScreen renders MainScreen for queue 0 1`] = `
           }
         />
       </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          Object {
+            "bottom": 15,
+            "left": 15,
+            "right": 15,
+            "top": 15,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+            "position": "absolute",
+            "right": 0,
+            "top": 6,
+          }
+        }
+        testID="main-screen-settings-button"
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+          testID="settings-icon"
+        />
+      </View>
     </View>
   </RCTScrollView>
 </View>
@@ -1771,6 +1813,7 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
               "textAlign": "center",
             }
           }
+          testID="main-screen-queue-title"
         >
           II Черга
         </Text>
@@ -3409,6 +3452,47 @@ exports[`MainScreen renders MainScreen for queue 1 1`] = `
           }
         />
       </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          Object {
+            "bottom": 15,
+            "left": 15,
+            "right": 15,
+            "top": 15,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+            "position": "absolute",
+            "right": 0,
+            "top": 6,
+          }
+        }
+        testID="main-screen-settings-button"
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+          testID="settings-icon"
+        />
+      </View>
     </View>
   </RCTScrollView>
 </View>
@@ -3478,6 +3562,7 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               "textAlign": "center",
             }
           }
+          testID="main-screen-queue-title"
         >
           III Черга
         </Text>
@@ -5114,6 +5199,47 @@ exports[`MainScreen renders MainScreen for queue 2 1`] = `
               "paddingTop": 16,
             }
           }
+        />
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          Object {
+            "bottom": 15,
+            "left": 15,
+            "right": 15,
+            "top": 15,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+            "position": "absolute",
+            "right": 0,
+            "top": 6,
+          }
+        }
+        testID="main-screen-settings-button"
+      >
+        <Image
+          resizeMode="contain"
+          source={1}
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+          testID="settings-icon"
         />
       </View>
     </View>
