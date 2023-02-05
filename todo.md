@@ -19,6 +19,7 @@
 - [ ] settings screen
 - [ ] slot type switching settings
 - [ ] document publish process with docusaurus 
+- [ ] add pick icon for queue title
 
 
 ## Bugs

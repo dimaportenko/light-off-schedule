@@ -9,4 +9,8 @@ export const TEST_IDS = {
   icons: {
     settings: "settings-icon",
   },
+  queuePicker: {
+    picker: "queue-picker",
+    queuePickerItemPrefix: "queue-picker-item-",
+  },
 };

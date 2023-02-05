@@ -99,12 +99,12 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
           })
         }
 
-        {/* <IconButton */}
-        {/*   icon={<SettingsIcon />} */}
-        {/*   onPress={() => {}} */}
-        {/*   style={tw`absolute top-${top + 6}px right-0`} */}
-        {/*   testID={TEST_IDS.mainScreen.settingsButton} */}
-        {/* /> */}
+        <IconButton
+          icon={<SettingsIcon />}
+          onPress={() => {}}
+          style={tw`absolute top-${top + 6}px right-0`}
+          testID={TEST_IDS.mainScreen.settingsButton}
+        />
       </ScrollView>
 
       <QueuePicker

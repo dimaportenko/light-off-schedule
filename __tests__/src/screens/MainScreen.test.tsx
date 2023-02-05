@@ -2,11 +2,12 @@
 
 import React from "react";
 import tk from "timekeeper";
-import { render, screen } from "../../utils/test-utils";
+import { render, screen, fireEvent } from "../../utils/test-utils";
 import { MainScreen } from "../../../src/screens/MainScreen";
 import { root } from "../../../src/store";
 import { translate } from "../../../src/i18n";
 import { TEST_IDS } from "../../../src/tests/ids";
+import { romeNumberArray } from "../../../src/utils/romeNumbers";
 
 describe("MainScreen", () => {
   const startTimestamp = 1487076708000;
@@ -58,5 +59,28 @@ describe("MainScreen", () => {
     ).toBeVisible();
     expect(screen.getByTestId(TEST_IDS.icons.settings)).toBeVisible();
     // screen.debug(screen.getByTestId(TEST_IDS.mainScreen.settingsButton));
+  });
+
+  test("MainScreen select queue", async () => {
+    const index = 1;
+    render(<MainScreen />);
+
+    expect(
+      screen.getByTestId(TEST_IDS.mainScreen.queueTitle)
+    ).toHaveTextContent(
+      romeNumberArray[index] + " " + translate("mainScreen.queue")
+    );
+
+    fireEvent.press(screen.getByTestId(TEST_IDS.mainScreen.queueTitle));
+    const picker = await screen.findByTestId(TEST_IDS.queuePicker.picker);
+    fireEvent(picker, "onValueChange", index);
+
+    expect(
+      screen.getByTestId(TEST_IDS.mainScreen.queueTitle)
+    ).toHaveTextContent(
+      romeNumberArray[index] + " " + translate("mainScreen.queue")
+    );
+
+    expect(root.queue.selectedQueueIndex).toBe(index);
   });
 });

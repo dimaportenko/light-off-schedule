@@ -8,6 +8,7 @@ import tw from "../../lib/tailwind";
 import { translate } from "../../i18n";
 import { useStore } from "../../store";
 import { queueTitleByIndex } from "../../utils/queue";
+import { TEST_IDS } from "../../tests/ids";
 
 type QueuePickerItemProps = {
   showPicker: boolean;
@@ -46,6 +47,7 @@ export const QueuePicker = observer<QueuePickerItemProps, QueuePickerRefType>(
     const picker = () => {
       return (
         <Picker
+          testID={TEST_IDS.queuePicker.picker}
           ref={pickerRef}
           selectedValue={queue.selectedQueueIndex}
           onValueChange={(itemValue) => {
@@ -54,6 +56,7 @@ export const QueuePicker = observer<QueuePickerItemProps, QueuePickerRefType>(
         >
           {queue.schedule.map((_, index) => (
             <Picker.Item
+              testID={`${TEST_IDS.queuePicker.queuePickerItemPrefix}${index}`}
               label={queueTitleByIndex(index)}
               value={index}
               key={queueTitleByIndex(index)}
