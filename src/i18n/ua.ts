@@ -21,6 +21,9 @@ const ua = {
 
     remindMe: "Нагадати за",
   },
+  settingsScreen: {
+    title: "Налаштування",
+  },
   notifications: {
     permissionDenied: "Доступ до нагадувань заборонено",
     title: "Розклад вимкнення світла",

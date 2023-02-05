@@ -1,4 +1,6 @@
-const en = {
+import { Translations } from "./ua";
+
+const en: Translations = {
   common: {
     in: "in",
     hh: "h",
@@ -20,6 +22,9 @@ const en = {
 
     remindMe: "Remind me",
   },
+  settingsScreen: {
+    title: "Settings",
+  },
   notifications: {
     permissionDenied: "Permission to send notifications was denied",
     title: "Light Off Schedule",
@@ -28,4 +33,3 @@ const en = {
 };
 
 export default en;
-export type Translations = typeof en;
