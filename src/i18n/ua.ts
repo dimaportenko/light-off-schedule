@@ -23,6 +23,10 @@ const ua = {
   },
   settingsScreen: {
     title: "Налаштування",
+
+    switchLightSlotOn: "Має бути",
+    switchLightSlotOff: "Відключення",
+    switchLIghtSlogMaybe: "Можливе відключення",
   },
   notifications: {
     permissionDenied: "Доступ до нагадувань заборонено",

@@ -52,10 +52,10 @@ export const MainScreen: FC<MainScreenProps> = observer(({ navigation }) => {
   };
 
   return (
-    <View style={tw`flex-1 bg-white`}>
+    <View style={tw`flex-1 bg-white pt-${top}px`}>
       <ScrollView
         style={tw`flex-1 p-6`}
-        contentContainerStyle={{ paddingTop: top, paddingBottom: bottom }}
+        contentContainerStyle={{ paddingBottom: bottom }}
         refreshControl={
           <RefreshControl
             refreshing={queue.fetchScheduleStatus === "pending"}

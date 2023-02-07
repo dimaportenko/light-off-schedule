@@ -8,6 +8,9 @@ export const TEST_IDS = {
   },
   settingsScreen: {
     screen: "settings-screen",
+    switchLightSlotOn: "settings-screen-switch-light-slot-on",
+    switchLightSlotOff: "settings-screen-switch-light-slot-off",
+    switchLightSlotMaybe: "settings-screen-switch-light-slot-maybe",
   },
   icons: {
     settings: "settings-icon",
