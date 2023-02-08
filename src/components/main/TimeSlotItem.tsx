@@ -3,6 +3,8 @@ import React, { FC } from "react";
 import { View, Text } from "react-native";
 import { TimeSlot, TimeSlotType } from "../../data/schedule";
 import tw from "../../lib/tailwind";
+import { TEST_IDS } from "../../tests/ids";
+import { colorForSlotType } from "../../utils/slot";
 import { getSlotTypeEmoji } from "../../utils/timeSlot";
 
 type TimeSlotProps = {
@@ -10,24 +12,21 @@ type TimeSlotProps = {
   lastSlotEndTime?: string;
 };
 
-const colorForSlotType = (type: TimeSlotType) => {
+const getSlotTypeTestID = (type: TimeSlotType) => {
   switch (type) {
     case "on":
-      return "bg-green-100";
+      return TEST_IDS.mainScreen.todayTimeSlots.on;
     case "off":
-      return "bg-red-100";
+      return TEST_IDS.mainScreen.todayTimeSlots.off;
     case "maybe":
-      return "bg-gray-100";
-
-    default:
-      return "bg-gray-100";
+      return TEST_IDS.mainScreen.todayTimeSlots.maybe;
   }
 };
 
-// border-b border-gray-300
 export const TimeSlotItem: FC<TimeSlotProps> = ({ slot, lastSlotEndTime }) => {
   return (
     <View
+      testID={getSlotTypeTestID(slot.type)}
       style={tw`flex-row justify-between items-center py-[8px] px-3 
                 border-b border-gray-300
                 ${colorForSlotType(slot.type)}

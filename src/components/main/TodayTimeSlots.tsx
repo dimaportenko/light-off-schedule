@@ -13,7 +13,7 @@ type TodayTimeSlotsProps = {
 
 export const TodayTimeSlots: FC<TodayTimeSlotsProps> = observer(
   ({ queueIndex, weekdayIndex }) => {
-    const { queue } = useStore();
+    const { queue, settings } = useStore();
     const queueSlots = queue.selectedQueueSchedule[weekdayIndex];
 
     let lastSlotEndTime: string | undefined;
@@ -36,7 +36,12 @@ export const TodayTimeSlots: FC<TodayTimeSlotsProps> = observer(
         <View>
           {queueSlots
             .slice(1, queueSlots.length)
-            .filter((slot) => slot.type !== "on")
+            .filter(
+              (slot) =>
+                (slot.type === "on" && settings.slotsEnabled.on) ||
+                (slot.type === "off" && settings.slotsEnabled.off) ||
+                (slot.type === "maybe" && settings.slotsEnabled.maybe)
+            )
             .map((slot, index, slots) => {
               return (
                 <TimeSlotItem

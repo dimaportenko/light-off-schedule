@@ -8,6 +8,7 @@ import tw from "../../lib/tailwind";
 import { translate } from "../../i18n";
 import { useStore } from "../../store";
 import { queueTitleByIndex } from "../../utils/queue";
+import { TEST_IDS } from "../../tests/ids";
 
 type QueuePickerItemProps = {
   showPicker: boolean;
@@ -43,27 +44,10 @@ export const QueuePicker = observer<QueuePickerItemProps, QueuePickerRefType>(
       }
     };
 
-    return Platform.OS === "android" || showPicker ? (
-      <Animated.View
-        entering={SlideInDown}
-        exiting={SlideOutDown}
-        style={tw`absolute bottom-0 bg-gray-100 w-100% android:h-0px`}
-      >
-        {Platform.OS === "ios" ? (
-          <View
-            style={tw` h-50px border-t border-gray-300 items-end justify-center bg-white`}
-          >
-            <TouchableOpacity
-              onPress={close}
-              style={tw`h-50px pr-4 justify-center`}
-            >
-              <Text style={tw`text-center text-blue-500 text-xl`}>
-                {translate("common.done")}
-              </Text>
-            </TouchableOpacity>
-          </View>
-        ) : null}
+    const picker = () => {
+      return (
         <Picker
+          testID={TEST_IDS.queuePicker.picker}
           ref={pickerRef}
           selectedValue={queue.selectedQueueIndex}
           onValueChange={(itemValue) => {
@@ -72,13 +56,48 @@ export const QueuePicker = observer<QueuePickerItemProps, QueuePickerRefType>(
         >
           {queue.schedule.map((_, index) => (
             <Picker.Item
+              testID={`${TEST_IDS.queuePicker.queuePickerItemPrefix}${index}`}
               label={queueTitleByIndex(index)}
               value={index}
               key={queueTitleByIndex(index)}
             />
           ))}
         </Picker>
-      </Animated.View>
-    ) : null;
+      );
+    };
+
+    const renderPicker = () => {
+      if (Platform.OS === "ios" && showPicker) {
+        return (
+          <Animated.View
+            entering={SlideInDown}
+            exiting={SlideOutDown}
+            style={tw`absolute bottom-0 bg-gray-100 w-100% android:h-0px`}
+          >
+            <View
+              style={tw` h-50px border-t border-gray-300 items-end justify-center bg-white`}
+            >
+              <TouchableOpacity
+                onPress={close}
+                style={tw`h-50px pr-4 justify-center`}
+              >
+                <Text style={tw`text-center text-blue-500 text-xl`}>
+                  {translate("common.done")}
+                </Text>
+              </TouchableOpacity>
+            </View>
+            {picker()}
+          </Animated.View>
+        );
+      }
+
+      if (Platform.OS === "android") {
+        return <View style={tw`opacity-0 h-0`}>{picker()}</View>;
+      }
+
+      return null;
+    };
+
+    return renderPicker();
   })
 );

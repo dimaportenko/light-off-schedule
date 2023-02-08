@@ -4,10 +4,7 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
   modulePathIgnorePatterns: ["./__tests__/utils"],
   setupFiles: ["./__mocks__/imports.ts"],
-  // setupFilesAfterEnv: [
-  //   "@testing-library/jest-native/extend-expect",
-  //   "./jest/setup.ts",
-  // ],
+  setupFilesAfterEnv: ["./jest/setup.ts"],
   // testEnvironment: "jest-environment-jsdom",
   testMatch: [
     "**/__tests__/**/*.[jt]s?(x)",

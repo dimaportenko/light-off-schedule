@@ -24,10 +24,15 @@ import {
   QueuePickerRefType,
 } from "../components/main/QueuePicker";
 import { AddRiminder } from "../components/reminder/AddReminder";
+import { TEST_IDS } from "../tests/ids";
+import { IconButton } from "../components/common/IconButton";
+import { SettingsIcon } from "../components/common/Icons";
+import { MainStackProps } from "../navigation/AppNavigator";
+import { routes } from "../navigation/routes";
 
-type MainScreenProps = {};
+type MainScreenProps = {} & MainStackProps<typeof routes.main>;
 
-export const MainScreen: FC<MainScreenProps> = observer(() => {
+export const MainScreen: FC<MainScreenProps> = observer(({ navigation }) => {
   const { top, bottom } = useSafeAreaInsets();
   const queuePickerRef = useRef<QueuePickerRefType>(null);
   const { queue } = useStore();
@@ -42,11 +47,15 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
     queue.fetchSchedule();
   };
 
+  const goToSettings = () => {
+    navigation.navigate(routes.settings);
+  };
+
   return (
-    <View style={tw`flex-1 bg-white`}>
+    <View style={tw`flex-1 bg-white pt-${top}px`}>
       <ScrollView
         style={tw`flex-1 p-6`}
-        contentContainerStyle={{ paddingTop: top, paddingBottom: bottom }}
+        contentContainerStyle={{ paddingBottom: bottom }}
         refreshControl={
           <RefreshControl
             refreshing={queue.fetchScheduleStatus === "pending"}
@@ -55,7 +64,10 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
         }
       >
         <TouchableOpacity onPress={open}>
-          <Text style={tw`text-3xl text-black text-center`}>
+          <Text
+            style={tw`text-3xl text-black text-center`}
+            testID={TEST_IDS.mainScreen.queueTitle}
+          >
             {romeNumberArray[queue.selectedQueueIndex] +
               " " +
               translate("mainScreen.queue")}
@@ -92,6 +104,13 @@ export const MainScreen: FC<MainScreenProps> = observer(() => {
             );
           })
         }
+
+        <IconButton
+          icon={<SettingsIcon />}
+          onPress={goToSettings}
+          style={tw`absolute top-6px right-0`}
+          testID={TEST_IDS.mainScreen.settingsButton}
+        />
       </ScrollView>
 
       <QueuePicker

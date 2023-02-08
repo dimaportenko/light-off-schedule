@@ -1,4 +1,5 @@
 import { render } from "@testing-library/react-native";
+import { NavigationContainer } from "@react-navigation/native";
 import { root, StoreProvider } from "../../src/store";
 
 // ---- Date config Start ----
@@ -12,7 +13,11 @@ dayjs.extend(customParseFormat);
 // ---- Date config End ----
 
 const AllTheProviders = ({ children }: { children: any }) => {
-  return <StoreProvider value={root}>{children}</StoreProvider>;
+  return (
+    <NavigationContainer>
+      <StoreProvider value={root}>{children}</StoreProvider>;
+    </NavigationContainer>
+  );
 };
 
 const customRender: typeof render = (ui, options) =>
