@@ -24,6 +24,11 @@ const en: Translations = {
   },
   settingsScreen: {
     title: "Settings",
+
+    switchLightSlotTitle: "Show time when",
+    switchLightSlotOn: "Light is available",
+    switchLightSlotOff: "Turn off",
+    switchLIghtSlogMaybe: "Turn off is possible",
   },
   notifications: {
     permissionDenied: "Permission to send notifications was denied",
