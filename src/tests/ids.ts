@@ -5,6 +5,11 @@ export const TEST_IDS = {
   mainScreen: {
     queueTitle: "main-screen-queue-title",
     settingsButton: "main-screen-settings-button",
+    todayTimeSlots: {
+      on: "main-screen-today-time-slots-on",
+      off: "main-screen-today-time-slots-off",
+      maybe: "main-screen-today-time-slots-maybe",
+    },
   },
   settingsScreen: {
     screen: "settings-screen",

@@ -24,7 +24,8 @@ const ua = {
   settingsScreen: {
     title: "Налаштування",
 
-    switchLightSlotOn: "Має бути",
+    switchLightSlotTitle: "Показувати час коли",
+    switchLightSlotOn: "Світло є",
     switchLightSlotOff: "Відключення",
     switchLIghtSlogMaybe: "Можливе відключення",
   },

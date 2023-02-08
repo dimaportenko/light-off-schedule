@@ -24,7 +24,7 @@ export const NavHeader: FC<{
 
   return (
     <View
-      style={tw`flex h-${height}px w-${screenWidth}px pt-${top}px flex-row items-center`}
+      style={tw`flex h-${height}px w-${screenWidth}px pt-${top}px flex-row items-center bg-white`}
       testID={TEST_IDS.common.navHeader.container}
     >
       <IconButton

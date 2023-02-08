@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { View, Text, Switch } from "react-native";
+import { View, Text, Switch, ViewStyle } from "react-native";
 import tw from "../../lib/tailwind";
 
 export const SwitchItem: FC<{
@@ -7,9 +7,10 @@ export const SwitchItem: FC<{
   value: boolean;
   onValueChange: (value: boolean) => void;
   testID?: string;
-}> = ({ title, value, onValueChange, testID }) => {
+  style?: ViewStyle | undefined;
+}> = ({ title, value, onValueChange, testID, style }) => {
   return (
-    <View style={tw`justify-between flex-row`} testID={testID}>
+    <View style={tw.style("justify-between flex-row", style)} testID={testID}>
       <Text style={tw`text-xl`}>{title}</Text>
       <Switch
         onValueChange={onValueChange}

@@ -1,7 +1,7 @@
 import { SettingsScreen } from "../../../src/screens/SettingsScreen";
 import { root } from "../../../src/store";
 import { TEST_IDS } from "../../../src/tests/ids";
-import { fireEvent, render, screen, waitFor } from "../../utils/test-utils";
+import { fireEvent, render, screen } from "../../utils/test-utils";
 
 describe("SettingsScreen", () => {
   const props = {

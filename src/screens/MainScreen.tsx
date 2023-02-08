@@ -108,7 +108,7 @@ export const MainScreen: FC<MainScreenProps> = observer(({ navigation }) => {
         <IconButton
           icon={<SettingsIcon />}
           onPress={goToSettings}
-          style={tw`absolute top-${top + 6}px right-0`}
+          style={tw`absolute top-6px right-0`}
           testID={TEST_IDS.mainScreen.settingsButton}
         />
       </ScrollView>
