@@ -21,6 +21,14 @@ const ua = {
 
     remindMe: "Нагадати за",
   },
+  settingsScreen: {
+    title: "Налаштування",
+
+    switchLightSlotTitle: "Показувати час коли",
+    switchLightSlotOn: "Світло є",
+    switchLightSlotOff: "Відключення",
+    switchLIghtSlogMaybe: "Можливе відключення",
+  },
   notifications: {
     permissionDenied: "Доступ до нагадувань заборонено",
     title: "Розклад вимкнення світла",

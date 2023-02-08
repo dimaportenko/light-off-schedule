@@ -5,6 +5,7 @@ import { TEST_IDS } from "../../tests/ids";
 
 export const icons = {
   settings: require("../../../assets/icons/settings-round-24px.png"),
+  back: require("../../../assets/icons/arrow-back-round-24px.png"),
 };
 
 export type IconTypes = keyof typeof icons;
@@ -13,6 +14,15 @@ export const SettingsIcon = () => (
   <Image
     testID={TEST_IDS.icons.settings}
     source={icons.settings}
+    style={tw`w-30px h-30px`}
+    resizeMode="contain"
+  />
+);
+
+export const BackIcon = () => (
+  <Image
+    testID={TEST_IDS.icons.back}
+    source={icons.back}
     style={tw`w-30px h-30px`}
     resizeMode="contain"
   />

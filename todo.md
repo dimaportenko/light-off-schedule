@@ -19,6 +19,9 @@
 - [ ] settings screen
 - [ ] slot type switching settings
 - [ ] document publish process with docusaurus 
+- [ ] add pick icon for queue title
+- [ ] share link to the app
+- [ ] add precommit hooks
 
 
 ## Bugs
