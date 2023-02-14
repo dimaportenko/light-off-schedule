@@ -16,17 +16,19 @@
 - [x] fetch data from the git repo
 - [x] fix refresh next turn off feature 
 - [x] show all slots 
-- [ ] settings screen
-- [ ] slot type switching settings
-- [ ] document publish process with docusaurus 
+- [x] settings screen
+- [x] slot type switching settings
 - [ ] add pick icon for queue title
 - [ ] share link to the app
 - [ ] add precommit hooks
+- [ ] add README
 
 
 ## Bugs
 
-- [ ] replace android time picker
+- [ ] android permission request issue
+- [ ] fix dark mode status bar
+- [x] replace android time picker
 - [x] fix android queue picker issue
 - [x] persist stores after app update
 - [x] next turn off time is incorrect
@@ -35,7 +37,9 @@
 ## Roadmap
 
 - [x] publish to store
-- [ ] fix android pickers issues
-- [ ] add navigation with settings screen
-- [ ] slots visibility settings
+- [x] fix android pickers issues
+- [x] add navigation with settings screen
+- [x] slots visibility settings
 - [ ] langauge settings
+- [ ] past time slots visual marks
+- [ ] share link to the app

@@ -19,7 +19,7 @@ export const TodayTimeSlots: FC<TodayTimeSlotsProps> = observer(
     let lastSlotEndTime: string | undefined;
     const lastTimeSlot = queueSlots[queueSlots.length - 1];
 
-    if (lastTimeSlot.type !== "on") {
+    if (settings.slotsEnabled[lastTimeSlot.type]) {
       const tomorrowIndex = ((weekdayIndex + 1) % 7) as WeekdDayIndexType;
       const firstTomorrowSlot = queue.schedule[queueIndex][tomorrowIndex][0];
       if (firstTomorrowSlot.type === lastTimeSlot.type) {
