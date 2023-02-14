@@ -31,6 +31,7 @@ i18n.translations = {
 };
 
 i18n.locale = Localization.locale;
+i18n.locale = "uk-UA";
 i18n.defaultLocale = "uk-UA";
 
 // handle RTL languages
