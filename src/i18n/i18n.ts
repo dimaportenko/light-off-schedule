@@ -14,6 +14,9 @@ if (Localization.locale.includes("US")) {
   require("dayjs/locale/uk");
   dayjs.locale("uk");
 }
+// TODO: hardcode ua locale
+require("dayjs/locale/uk");
+dayjs.locale("uk");
 
 i18n.fallbacks = true;
 /**
@@ -31,6 +34,7 @@ i18n.translations = {
 };
 
 i18n.locale = Localization.locale;
+// TODO: hardcode ua locale
 i18n.locale = "uk-UA";
 i18n.defaultLocale = "uk-UA";
 

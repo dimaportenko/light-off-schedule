@@ -1,12 +1,12 @@
-import React, { FC } from "react";
-import { Text } from "react-native";
+import { FC } from "react";
 import dayjs from "dayjs";
-import tw from "../../lib/tailwind";
 import { getCurrentWeekdayIndex } from "../../utils/date";
 import { observer } from "mobx-react-lite";
 import { useStore } from "../../store";
 import { TEST_IDS } from "../../tests/ids";
-import { getSlotTypeEmoji } from "../../utils/timeSlot";
+import { getSlotTypeIcon } from "../../utils/timeSlot";
+import { View } from "react-native";
+import tw from "../../lib/tailwind";
 
 type CurrentSlotStatusProps = {
   queueIndex: number;
@@ -33,12 +33,13 @@ export const CurrentSlotStatus: FC<CurrentSlotStatusProps> = observer(
     }
 
     return (
-      <Text
-        style={tw`text-[40px] text-center`}
-        testID={TEST_IDS.currentSlotStatus.statusEmoji}
-      >
-        {getSlotTypeEmoji(nextTimeSlot.type)}
-      </Text>
+      <View style={tw`flex-row items-center justify-center`}>
+        {getSlotTypeIcon(nextTimeSlot.type, {
+          width: 40,
+          height: 40,
+          testID: TEST_IDS.currentSlotStatus.statusEmoji,
+        })}
+      </View>
     );
   }
 );
