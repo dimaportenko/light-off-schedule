@@ -1,6 +1,9 @@
 export const TEST_IDS = {
   currentSlotStatus: {
     statusEmoji: "current-slot-status-emoji",
+    statusIconOn: "current-slot-status-icon-on",
+    statusIconOff: "current-slot-status-icon-off",
+    statusIconMaybe: "current-slot-status-icon-maybe",
   },
   mainScreen: {
     queueTitle: "main-screen-queue-title",

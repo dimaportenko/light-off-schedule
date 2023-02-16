@@ -5,7 +5,7 @@ import { TimeSlot, TimeSlotType } from "../../data/schedule";
 import tw from "../../lib/tailwind";
 import { TEST_IDS } from "../../tests/ids";
 import { colorForSlotType } from "../../utils/slot";
-import { getSlotTypeEmoji } from "../../utils/timeSlot";
+import { getSlotTypeIcon } from "../../utils/timeSlot";
 
 type TimeSlotProps = {
   slot: TimeSlot;
@@ -36,9 +36,13 @@ export const TimeSlotItem: FC<TimeSlotProps> = ({ slot, lastSlotEndTime }) => {
         {dayjs(slot.start, "HH:mm").format("H:mm")} -{" "}
         {dayjs(lastSlotEndTime || slot.end, "HH:mm").format("H:mm")}
       </Text>
-      <Text style={tw`text-xl text-black opacity-90`}>
-        {getSlotTypeEmoji(slot.type)}
-      </Text>
+      <View style={tw`opacity-90`}>
+        {getSlotTypeIcon(slot.type, {
+          width: 30,
+          height: 30,
+          testID: TEST_IDS.currentSlotStatus.statusEmoji,
+        })}
+      </View>
     </View>
   );
 };
