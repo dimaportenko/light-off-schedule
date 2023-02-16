@@ -9,11 +9,16 @@ import { MainStackProps } from "../navigation/AppNavigator";
 import { routes } from "../navigation/routes";
 import { useStore } from "../store";
 import { TEST_IDS } from "../tests/ids";
-import { getSlotTypeEmoji } from "../utils/timeSlot";
+import { getSlotTypeEmoji, getSlotTypeIcon } from "../utils/timeSlot";
 
 type SettingsScreenProps = {} & MainStackProps<typeof routes.settings>;
 
 const Separator = () => <View style={tw`h-1px my-2 bg-gray-300`} />;
+
+const iconProps = {
+  width: 24,
+  height: 24,
+};
 
 export const SettingsScreen: FC<SettingsScreenProps> = observer(() => {
   const { settings } = useStore();
@@ -36,11 +41,8 @@ export const SettingsScreen: FC<SettingsScreenProps> = observer(() => {
 
           <SwitchItem
             testID={TEST_IDS.settingsScreen.switchLightSlotOn}
-            title={
-              getSlotTypeEmoji("on") +
-              " " +
-              translate("settingsScreen.switchLightSlotOn")
-            }
+            icon={getSlotTypeIcon("on", iconProps)}
+            title={translate("settingsScreen.switchLightSlotOn")}
             value={settings.slotsEnabled.on}
             onValueChange={(value) => {
               settings.setSlotEnabled("on", value);
@@ -50,11 +52,8 @@ export const SettingsScreen: FC<SettingsScreenProps> = observer(() => {
           <Separator />
           <SwitchItem
             testID={TEST_IDS.settingsScreen.switchLightSlotOff}
-            title={
-              getSlotTypeEmoji("off") +
-              " " +
-              translate("settingsScreen.switchLightSlotOff")
-            }
+            icon={getSlotTypeIcon("off", iconProps)}
+            title={translate("settingsScreen.switchLightSlotOff")}
             value={settings.slotsEnabled.off}
             onValueChange={(value) => {
               settings.setSlotEnabled("off", value);
@@ -64,11 +63,8 @@ export const SettingsScreen: FC<SettingsScreenProps> = observer(() => {
           <Separator />
           <SwitchItem
             testID={TEST_IDS.settingsScreen.switchLightSlotMaybe}
-            title={
-              getSlotTypeEmoji("maybe") +
-              " " +
-              translate("settingsScreen.switchLIghtSlogMaybe")
-            }
+            icon={getSlotTypeIcon("maybe", iconProps)}
+            title={translate("settingsScreen.switchLIghtSlogMaybe")}
             value={settings.slotsEnabled.maybe}
             onValueChange={(value) => {
               settings.setSlotEnabled("maybe", value);

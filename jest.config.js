@@ -2,6 +2,9 @@ module.exports = {
   // collectCoverageFrom: ["**/src/**/*.ts", "**/src/**/*.tsx"],
   preset: "jest-expo",
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  moduleNameMapper: {
+    "\\.svg": "<rootDir>/__mocks__/svgMock.ts",
+  },
   modulePathIgnorePatterns: ["./__tests__/utils"],
   setupFiles: ["./__mocks__/imports.ts"],
   setupFilesAfterEnv: ["./jest/setup.ts"],
