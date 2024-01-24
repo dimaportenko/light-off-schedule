@@ -11,6 +11,7 @@
     "eas:ios": "eas build -p ios",
     "expo:install": "npx expo install",
     "pod install": "pod install --project-directory=ios",
-    "eas:production": "eas build --platform android --profile production --non-interactive --no-wait --auto-submit"
+    "eas:production": "eas build --platform android --profile production --no-wait --auto-submit",
+    "nodev:expo:start": "npx expo start --no-dev"
   }
 }
