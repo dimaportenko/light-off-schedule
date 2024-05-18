@@ -1,0 +1,102 @@
+[
+  {
+    "0": [
+      { "start": "01:00", "end": "03:00", "type": "on" },
+      { "start": "03:00", "end": "05:00", "type": "on" },
+      { "start": "05:00", "end": "07:00", "type": "maybe" },
+      { "start": "07:00", "end": "09:00", "type": "off" },
+      { "start": "09:00", "end": "11:00", "type": "on" },
+      { "start": "11:00", "end": "13:00", "type": "on" },
+      { "start": "13:00", "end": "15:00", "type": "on" },
+      { "start": "15:00", "end": "17:00", "type": "on" },
+      { "start": "17:00", "end": "19:00", "type": "maybe" },
+      { "start": "19:00", "end": "21:00", "type": "off" },
+      { "start": "21:00", "end": "23:00", "type": "on" },
+      { "start": "23:00", "end": "01:00", "type": "on" }
+    ],
+    "1": [
+      { "start": "01:00", "end": "03:00", "type": "maybe" },
+      { "start": "03:00", "end": "05:00", "type": "off" },
+      { "start": "05:00", "end": "07:00", "type": "on" },
+      { "start": "07:00", "end": "09:00", "type": "on" },
+      { "start": "09:00", "end": "11:00", "type": "on" },
+      { "start": "11:00", "end": "13:00", "type": "on" },
+      { "start": "13:00", "end": "15:00", "type": "on" },
+      { "start": "15:00", "end": "17:00", "type": "on" },
+      { "start": "17:00", "end": "19:00", "type": "on" },
+      { "start": "19:00", "end": "21:00", "type": "off" },
+      { "start": "21:00", "end": "23:00", "type": "on" },
+      { "start": "23:00", "end": "01:00", "type": "on" }
+    ],
+    "2": [
+      { "start": "01:00", "end": "03:00", "type": "on" },
+      { "start": "03:00", "end": "05:00", "type": "on" },
+      { "start": "05:00", "end": "07:00", "type": "on" },
+      { "start": "07:00", "end": "09:00", "type": "on" },
+      { "start": "09:00", "end": "11:00", "type": "on" },
+      { "start": "11:00", "end": "13:00", "type": "on" },
+      { "start": "13:00", "end": "15:00", "type": "on" },
+      { "start": "15:00", "end": "17:00", "type": "on" },
+      { "start": "17:00", "end": "19:00", "type": "on" },
+      { "start": "19:00", "end": "21:00", "type": "on" },
+      { "start": "21:00", "end": "23:00", "type": "on" },
+      { "start": "23:00", "end": "01:00", "type": "on" }
+    ],
+    "3": [
+      { "start": "01:00", "end": "03:00", "type": "on" },
+      { "start": "03:00", "end": "05:00", "type": "on" },
+      { "start": "05:00", "end": "07:00", "type": "on" },
+      { "start": "07:00", "end": "09:00", "type": "on" },
+      { "start": "09:00", "end": "11:00", "type": "on" },
+      { "start": "11:00", "end": "13:00", "type": "on" },
+      { "start": "13:00", "end": "15:00", "type": "on" },
+      { "start": "15:00", "end": "17:00", "type": "on" },
+      { "start": "17:00", "end": "19:00", "type": "on" },
+      { "start": "19:00", "end": "21:00", "type": "on" },
+      { "start": "21:00", "end": "23:00", "type": "on" },
+      { "start": "23:00", "end": "01:00", "type": "on" }
+    ],
+    "4": [
+      { "start": "01:00", "end": "03:00", "type": "on" },
+      { "start": "03:00", "end": "05:00", "type": "on" },
+      { "start": "05:00", "end": "07:00", "type": "maybe" },
+      { "start": "07:00", "end": "09:00", "type": "off" },
+      { "start": "09:00", "end": "11:00", "type": "on" },
+      { "start": "11:00", "end": "13:00", "type": "on" },
+      { "start": "13:00", "end": "15:00", "type": "on" },
+      { "start": "15:00", "end": "17:00", "type": "on" },
+      { "start": "17:00", "end": "19:00", "type": "maybe" },
+      { "start": "19:00", "end": "21:00", "type": "off" },
+      { "start": "21:00", "end": "23:00", "type": "on" },
+      { "start": "23:00", "end": "01:00", "type": "on" }
+    ],
+    "5": [
+      { "start": "01:00", "end": "03:00", "type": "on" },
+      { "start": "03:00", "end": "05:00", "type": "on" },
+      { "start": "05:00", "end": "07:00", "type": "on" },
+      { "start": "07:00", "end": "09:00", "type": "on" },
+      { "start": "09:00", "end": "11:00", "type": "on" },
+      { "start": "11:00", "end": "13:00", "type": "on" },
+      { "start": "13:00", "end": "15:00", "type": "on" },
+      { "start": "15:00", "end": "17:00", "type": "on" },
+      { "start": "17:00", "end": "19:00", "type": "on" },
+      { "start": "19:00", "end": "21:00", "type": "on" },
+      { "start": "21:00", "end": "23:00", "type": "on" },
+      { "start": "23:00", "end": "01:00", "type": "on" }
+    ],
+    "6": [
+      { "start": "01:00", "end": "03:00", "type": "on" },
+      { "start": "03:00", "end": "05:00", "type": "on" },
+      { "start": "05:00", "end": "07:00", "type": "maybe" },
+      { "start": "07:00", "end": "09:00", "type": "off" },
+      { "start": "09:00", "end": "11:00", "type": "on" },
+      { "start": "11:00", "end": "13:00", "type": "on" },
+      { "start": "13:00", "end": "15:00", "type": "on" },
+      { "start": "15:00", "end": "17:00", "type": "on" },
+      { "start": "17:00", "end": "19:00", "type": "maybe" },
+      { "start": "19:00", "end": "21:00", "type": "off" },
+      { "start": "21:00", "end": "23:00", "type": "on" },
+      { "start": "23:00", "end": "01:00", "type": "on" }
+    ]
+  }
+]
