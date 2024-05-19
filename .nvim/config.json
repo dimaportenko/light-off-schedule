@@ -1,4 +1,5 @@
 {
+  "env": ".env",
   "commands": {
     "expo:start": "yarn start",
     "expo:start:clean": "npx expo start -c",
@@ -12,6 +13,7 @@
     "expo:install": "npx expo install",
     "pod install": "pod install --project-directory=ios",
     "eas:production": "eas build --platform android --profile production --no-wait --auto-submit",
-    "nodev:expo:start": "npx expo start --no-dev"
+    "nodev:expo:start": "npx expo start --no-dev",
+    "local": "eas build --platform ios --local"
   }
 }

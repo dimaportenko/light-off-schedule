@@ -6,7 +6,7 @@ import { IQueueStore } from "./IRootStore";
 
 export class QueueStore implements IQueueStore {
   schedule = schedule;
-  selectedQueueIndex = 2;
+  selectedQueueIndex = 0;
   fetchScheduleStatus = "idle";
 
   constructor() {
@@ -31,10 +31,11 @@ export class QueueStore implements IQueueStore {
       this.fetchScheduleStatus = "pending";
     });
     try {
-      const response = await fetch(
-        "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v2/schedule.json"
-      );
-      const data = await response.json();
+      // const response = await fetch(
+      //   "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v3/schedule.json"
+      // );
+      // const data = await response.json();
+      const data = require("../../db/v3/schedule.json")
       console.log("fetchSchedule", data);
 
       runInAction(() => {
