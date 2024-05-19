@@ -31,14 +31,17 @@ export class QueueStore implements IQueueStore {
       this.fetchScheduleStatus = "pending";
     });
     try {
-      // const response = await fetch(
-      //   "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v3/schedule.json"
-      // );
-      // const data = await response.json();
-      const data = require("../../db/v3/schedule.json")
+      const response = await fetch(
+        "https://raw.githubusercontent.com/dimaportenko/light-off-schedule/main/db/v3/schedule.json"
+      );
+      const data = await response.json();
+      // local testing
+      // const data = require("../../db/v3/schedule.json")
       console.log("fetchSchedule", data);
 
       runInAction(() => {
+        this.selectedQueueIndex =
+          data.length > this.selectedQueueIndex ? this.selectedQueueIndex : 0;
         this.schedule = data;
         this.fetchScheduleStatus = "done";
       });

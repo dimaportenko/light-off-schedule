@@ -26,3 +26,5 @@ android
 *.app
 *.ipa
 *.apk
+
+.nvim/.env

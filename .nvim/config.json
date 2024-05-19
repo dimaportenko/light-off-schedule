@@ -14,6 +14,6 @@
     "pod install": "pod install --project-directory=ios",
     "eas:production": "eas build --platform android --profile production --no-wait --auto-submit",
     "nodev:expo:start": "npx expo start --no-dev",
-    "local": "eas build --platform ios --local"
+    "local": "eas build --platform ios --profile production --local"
   }
 }
