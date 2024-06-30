@@ -28,6 +28,12 @@
     "production": {
       "extends": "base",
       "channel": "production"
+    },
+    "local": {
+      "extends": "base",
+      "android": {
+        "buildType": "apk"
+      }
     }
   },
   "submit": {
